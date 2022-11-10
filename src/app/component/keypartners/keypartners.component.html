@@ -1,0 +1,39 @@
+<div id="slide5" class="half_banner">
+  <div class="bg_img">
+    <div class="container">
+      <div class="title_panel">
+        <h2 class="title">{{heading}}
+
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container size">
+  <app-breadcrumb [navArr]="[{link:'key_partners', text:'Key Partners'}]">
+  </app-breadcrumb>
+  <p class="inst">Click on the below areas to learn more</p>
+  <div class="grid-container">
+    <div *ngFor="let data of this.items; let i= index" class="timeline">
+
+      <div class="text">
+        <a *ngIf="data.link" href="{{data.link}}">
+          <div class="image" *ngIf="data.image" [style.background-image]="'url('+data.image+')'">
+            <div id="divTAReviews" class="title">
+              <div *ngIf="data.title" [innerHtml]="data.title" class="title1"> </div>
+              <div *ngIf="data.desc" [innerHtml]="data.desc" class="desc"></div>
+            </div>
+          </div>
+        </a>
+        <a *ngIf="data.link1" href="{{data.link1}}" target="_blank">
+          <div class="image" *ngIf="data.image" [style.background-image]="'url('+data.image+')'">
+            <div id="divTAReviews" class="title">
+              <div *ngIf="data.title" [innerHtml]="data.title" class="title1"> </div>
+              <div *ngIf="data.desc" [innerHtml]="data.desc" class="desc"></div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

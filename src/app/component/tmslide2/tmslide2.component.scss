@@ -1,0 +1,71 @@
+@import '../../variables';
+.half_banner {
+  
+  .bg_img {
+    background-image: url('../../../assets/images/about.png');
+  }
+}
+
+  
+.tmslide2{
+  
+   
+    position: relative;
+    margin-bottom: 30px;
+  
+    .head{
+        margin-bottom: 20px;
+       
+    }
+    
+}
+.content{
+    display: flex;
+    
+}
+.left{
+        width: 50%;
+        margin-right: 1%;
+        padding: 10px;
+        background-color: gainsboro;
+        .title{
+            color: $brand_color;
+        }
+       ol{  
+             li{
+            margin-bottom: 20px;
+            font-weight: bold;
+            u{
+                color: $brand_color;
+            }
+        }
+          ul{
+              li{
+                  margin:10px 0px;
+                  font-weight: normal;
+              }
+          }
+      
+    }}
+    
+    .right{
+        width: 45%;
+        margin-left: 1%;
+       
+        padding: 10PX;
+      background-color: $brand_color;
+      color: #fff;
+      position: relative;
+      .symbol{
+        font-size: 100px;
+        font-weight: bold;
+        color: $brand_color;
+        position: absolute;
+        left:-60px;
+        top:40%
+    }
+        li{
+            margin-bottom: 30px;
+        }
+    }
+    

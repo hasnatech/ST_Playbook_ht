@@ -1,0 +1,58 @@
+<div id="about">
+  <div id="slide5" class="half_banner">
+    <div class="bg_img">
+      <div class="container">
+        <div class="title_panel">
+          <h2 class="title">{{heading}}
+            <p class="para" [innerHtml]="description"></p>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container top_little">
+  <app-breadcrumb [navArr]="[{link:'about', text:'Organization Development'}]"></app-breadcrumb>
+  <div class="inst">Click on the picture to watch the video </div>
+  <div class="down_arr">
+    <a href="#flipcard">
+      Scroll Down
+      <img src="assets/images/Arrow_down1.png" alt="">
+    </a>
+  </div>
+</div>
+
+
+
+<div id="slide5_card" class="video">
+  <a href="https://web.microsoftstream.com/video/70fbd4c7-acc1-40c2-a66f-aff77249c8f4" target="_blank">
+    <img src="assets/images/video1.png" alt="">
+    <div class="playbutton">
+      <img src="assets/images/playbutton.png" alt="">
+    </div>
+  </a>
+
+</div>
+<div>
+  <div class="container">
+    <div class="card-group">
+      <div class="card" *ngFor="let data of this.items" (mouseover)="data.hover = true" (mouseout)="data.hover = false"
+        (click)="goto(data.link)">
+        <div class="holder">
+          <div class="icon">
+            <img src="{{data.hover == true ? data.image_hover : data.image}}" alt="">
+          </div>
+          <div class="title" [innerHtml]="data.title">
+          </div>
+          <hr align="left">
+          <div class="content" [innerHtml]="data.description">
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="space"></div>

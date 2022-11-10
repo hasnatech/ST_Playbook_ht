@@ -1,0 +1,8 @@
+<div class="breadcrumb">
+  <ng-container class="home">
+    <a routerLink="/">Home</a> > 
+  </ng-container>
+  <ng-container class="item" *ngFor="let item of navArr; let i = index">
+      <a routerLink="/{{item.link}}">{{item.text}}</a> <ng-container *ngIf="i<navArr.length-1"> &gt; </ng-container>
+  </ng-container>
+</div>

@@ -1,0 +1,51 @@
+
+<div class="section" id="videoscroll">
+  <div class="container">
+    <h2>Organization Development Updates</h2>
+    <div class="video-holder" *ngFor="let data of this.items; let id = index">
+      <div class="video-panel" id="video_{{id}}" *ngIf="data.type =='left'">
+        <div class="img">
+          <img src="{{data.image}}" alt="">
+        </div>
+        <div class="card">
+          <div class="content">
+            <div class="title" [innerHtml]="data.title">
+            </div>
+            <div class="content" [innerHtml]="data.desc">
+            </div>
+          </div>
+          <div class="button" (click)="readmoreClick(id)" [innerHtml]="data.button">
+          </div>
+        </div>
+      </div>
+      <div class="video-panel-right" id="video_{{id}}" *ngIf="data.type =='right'">
+        <div class="card">
+          <div class="content">
+            <div class="title" [innerHtml]="data.title">
+            </div>
+            <div class="content" [innerHtml]="data.desc">
+            </div>
+          </div>
+          <a>
+          <div class="button" [innerHtml]="data.button">
+            
+          </div>
+          </a>
+        </div>
+        <div class="img">
+          <img src="{{data.image}}" alt="">
+        </div>
+        <img class="hide" src="{{data.image}}" alt="">
+      </div> 
+      <div class="clear"></div>
+    </div>
+    
+  </div>
+  <!--<div class="space"></div>
+    <div class="image">
+     <a href="#cardscroll">
+      scroll
+      <img src="assets/images/Arrow_down.png" alt="">
+    </a>
+      </div>-->
+</div>

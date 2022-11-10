@@ -1,0 +1,96 @@
+@import '../../variables';
+.section{
+  margin-top: -100px;
+}h2{
+  color: $brand-color;
+  margin-bottom: 50px;
+  
+}
+
+.video-panel, .video-panel-right {
+  display: flex;
+  position: relative;
+  margin-bottom: 150px;
+  
+
+
+  .card{
+    background-color: #fff;
+    box-shadow: 0 0 12px 6px rgba(187, 187, 187, 0.271);
+   /*-moz-box-shadow:0 0 12px 6px rgba(187, 187, 187, 0.271);
+   -webkit-box-shadow:0 0 12px 6px rgba(187, 187, 187, 0.271);*/
+    position: absolute;
+    max-width: 350px;
+    padding: 40px;
+    width: 100%;
+    top: 20%;
+    right: 50px;
+
+    .title {
+      color: $brand-color;
+      font-size: 130%;
+      margin-bottom: 20px;
+    }
+    .button {
+      position: absolute;
+      bottom: -20px;
+      padding: 15px 30px;
+      border-radius: 3px;
+      color: #fff;
+      background-color: $brand-color;
+      cursor: pointer;
+    }
+
+  }
+}
+
+.video-panel-right{
+    .card{
+        
+        left: 50px;
+        top: 50px;
+        z-index: 3;
+    }
+    .content{
+        left: 50px;
+        right: auto;
+    }
+    .img{
+        position: absolute;
+        right: 0px;
+    }
+}
+
+.hide{
+    opacity: 0;
+}
+.video-holder:last-child{
+  .video-panel, .video-panel-right{
+  
+    margin-bottom: 0px;
+  }
+}
+/*.space{
+  padding-top: 28px;
+}
+.image{
+  position: absolute;
+ margin-left: 50%;
+ animation: mysecond 1s ease 0s infinite alternate;
+ height: 40px;
+ width: 40px;
+ //top: 207.5%;
+ transform: translateY(0px);
+ a{
+   text-decoration: none;
+ }
+  img{
+    height: 40px;
+    width: 40px;
+  }
+}
+@keyframes mysecond {
+  0%   {left:0px; transform: translateY(0px); }
+  
+  100% {left:0px; transform: translateY(-30px);}
+}*/

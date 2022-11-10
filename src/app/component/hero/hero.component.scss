@@ -1,0 +1,151 @@
+@import '../../variables';
+$_top_height : calc(100vh - 114px);
+
+.triangle-panel {
+  width: 100%;
+  position: absolute;
+  /*background-color: #ab08085c;*/
+  height: 100vh;
+  z-index: 2;
+  overflow: hidden;
+
+  .triangle-div {
+    position: absolute;
+    //width: 100%;
+
+    .triangle {
+      fill: $secondary_color;
+      transform-origin: 50% 50%;
+
+    }
+  }
+
+  .triangle-div:nth-child(1) {
+    transform: translateX(750px) translateY(200px) scale(2) rotate(45deg);
+  }
+
+  .triangle-div:nth-child(2) {
+    transform: translateX(1250px) translateY(500px) scale(.5) rotate(-55deg);
+  }
+
+  .triangle-div:nth-child(3) {
+    transform: translateX(50px) translateY(400px) scale(1.5) rotate(-15deg);
+  }
+
+
+}
+
+#image_women {
+  position: relative;
+  display: block;
+  width: 100%;
+  /*padding-top: (3 / 4) * 100%;*/
+
+  img {
+    position: absolute;
+    max-height: 90%;
+    right: 0;
+    //bottom: 11px;
+    bottom: 0;
+    left: 80px;
+  }
+}
+
+.hero_content {
+
+  overflow: hidden;
+  height: 100vh;
+}
+
+
+.hero {
+  height:  $_top_height;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  .right-color {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: $brand_color;
+    width: 40%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .main {
+    position: relative;
+    z-index: 2;
+
+    .content {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .women {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .full-height {
+    height:  $_top_height;
+  }
+}
+
+.down_arr {
+  position: absolute;
+  margin-left: 100%;
+  bottom: 80px;
+  text-align: center;
+  //position: relative;
+  animation: blinkAnimation 2s ease 0s infinite alternate;
+  height: 40px;
+  width: 40px;
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@keyframes blinkAnimation {
+  0% {
+    transform: translateY(-20px);
+
+  }
+
+  100% {
+    transform: translateY(-0px);
+  }
+}
+
+@include sm {
+  .hero {
+    #image_women {
+      padding-top: 10%;
+      text-align: center;
+      margin: 0 auto;
+
+      img {
+        position: relative;
+        max-height: 400px;
+      }
+    }
+
+    .right-color {
+      display: none;
+    }
+
+    .flex {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,409 @@
+<div id="slide5" class="half_banner">
+  <div class="bg_img">
+    <div class="container">
+      <div class="title_panel">
+        <h2 class="title">{{heading}}
+
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="od">
+  <div class="container size">
+    <app-breadcrumb
+      [navArr]="[{link:'about', text:'Organization Development'}, {link:'Our_OD', text:'Our OD Practice Areas'}]">
+    </app-breadcrumb>
+    <div class="our_od">
+      <div class="text fade_up">
+        <p>OD increases the effectiveness of people in organizations through focusing on organizational change,
+          enhancing
+          performance, and alignment of the entire system and its interdependent parts: strategy, process, structure,
+          culture and people. Delivering transformation value through our various practice areas.</p>
+      </div>
+      <p class="inst">Click on the below areas to learn more</p>
+      <div class="row fade_up" id="icon_box_panel">
+        <div class="column boxes">
+          <div class="square">
+            <div class="divider" (mousedown)="selectedItem = 1" [ngClass]="{'selected': selectedItem == 1}">
+              <div class="col1">
+                <img src="assets/images/S6_P1.png">
+              </div>
+              <div class="col1 align">
+                <h5>Strategic People Transformation</h5>
+              </div>
+            </div>
+
+          </div>
+          <div class="square">
+            <div class="divider" (mousedown)="selectedItem = 2" [ngClass]="{'selected': selectedItem == 2}">
+              <div class="col2">
+                <img src="assets/images/S6_P2.png">
+              </div>
+              <div class="col2 align">
+                <h5>Leadership Engagement</h5>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="square">
+            <div class="divider" (mousedown)="selectedItem = 3" [ngClass]="{'selected': selectedItem == 3}">
+              <div class="col3">
+                <img src="assets/images/S6_P3.png">
+              </div>
+              <div class="col3 align">
+                <h5>Culture</h5>
+              </div>
+            </div>
+
+          </div>
+          <div class="square">
+            <div class="divider" (mousedown)="selectedItem = 4" [ngClass]="{'selected': selectedItem == 4}">
+              <div class="col4">
+                <img src="assets/images/S6_P4.png">
+              </div>
+              <div class="col4 align">
+                <h5>Organization Design</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="square">
+            <div class="divider" (mousedown)="selectedItem = 5" [ngClass]="{'selected': selectedItem == 5}">
+              <div class="col5">
+                <img src="assets/images/S6_P5.png">
+              </div>
+              <div class="col5 align">
+                <h5>Change</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *ngIf="selectedItem == 1" -->
+        <div class="content_panel">
+          <div [@animate]="flyIn" *ngIf="selectedItem == 1" class="responsive_hide panel1">
+            <h2>What is Strategic People Transformation within OD?</h2>
+            <p>Strategic People Transformation mainly focuses on the people aspects around transformation. This specific
+              practice area is key in integrating all other OD practice areas across Culture, Leadership Alignment,
+              Change and Organization Design when looking at high impact, critical transformations across our
+              organization.</p>
+
+            <div class="grid-container">
+
+              <div *ngFor="let data of this.item1; let i= index" class="timeline1 timeline">
+                <div *ngIf="data.title" [innerHtml]="data.title" class="title"> </div>
+                <div *ngIf="data.desc" [innerHtml]="data.desc" class="descrip"> </div>
+                <div *ngIf="data.image">
+                  <div class="image" [style.background-image]="'url('+data.image+')'"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div [@animate]="flyIn" *ngIf="selectedItem == 2" class="responsive_hide green_dark">
+
+            <h2>What is Leadership Engagement within OD?</h2>
+            <p>The Leadership Engagement practice area focuses on strengthening and accelerating achievement of our
+              strategy by preparing and mobilizing our top leaders. In addition, the practice area provides a framework
+              and tools for forming and sustaining high-performing teams.</p>
+
+            <div class="grid-container">
+              <div *ngFor="let data of this.item2; let i= index" class="timeline2 timeline">
+                <div *ngIf="data.title" [innerHtml]="data.title" class="title"> </div>
+                <div *ngIf="data.desc" [innerHtml]="data.desc" class="desc1"> </div>
+                <div *ngIf="data.image">
+                  <div class="image" [style.background-image]="'url('+data.image+')'"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div *ngIf="selectedItem == 3" [@animate]="flyIn" class="responsive_hide brand_color_lite">
+            <h2>What is Culture within OD?</h2>
+            <p>In developing a high performance culture, working with leadership is key.
+              Resolving cultural issues and developing a high-performance culture requires a
+              thoughtful exploration of the beliefs and assumptions about the organization,
+              its people (including leaders), the relations with customers & the industry, the
+              systems, structure & processes. Note it requires long term perspective and systemic
+              approach to realize value (including changing people processes). Also requires
+              discipline and intentional culture development and mechanisms for reinforcing new
+              behaviors effectively.
+            </p>
+
+            <div class="grid-container">
+
+              <div *ngFor="let data of this.item3; let i= index" class="timeline3 timeline">
+                <div *ngIf="data.title" [innerHtml]="data.title" class="title"> </div>
+                <div *ngIf="data.desc" [innerHtml]="data.desc" class="desc1"> </div>
+                <div *ngIf="data.image">
+                  <div class="image" [style.background-image]="'url('+data.image+')'"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div *ngIf="selectedItem == 4" [@animate]="flyIn" class="responsive_hide content4">
+            <h2>What is Organization Design within OD?</h2>
+            <p>Organization Design focuses on a proactive and fact-based approach to analyze and
+              model an organization in terms of structure, process, governance (decision rights),
+              people efforts, costs and operating model efficiency and effectiveness. When the right
+              Organization Design methodology and tools are applied, we can ensure that the business
+              had the right capabilities and capacity to drive strategic success.
+            </p>
+
+            <div class="grid-container">
+
+              <div *ngFor="let data of this.item4; let i= index" class="timeline4 timeline">
+                <div *ngIf="data.title" [innerHtml]="data.title" class="title"> </div>
+                <div *ngIf="data.desc" [innerHtml]="data.desc" class="desc1"> </div>
+                <div *ngIf="data.image">
+                  <div class="image" [style.background-image]="'url('+data.image+')'"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div *ngIf="selectedItem == 5" [@animate]="flyIn" class="responsive_hide brand_color_dark">
+            <h2>What is Change within OD?</h2>
+            <p>Change management provides a structured approach to enabling individuals, teams and
+              organizations to transition from a current state to a desired future state. Within Change
+              we help our clients tell the stories of the “why” in ways that inspire curiosity and
+              exploration about the change. We guide leaders through change, encouraging them to model
+              it early and often and focus on helping people adopt change by teaching new knowledge,
+              skills, and abilities, instituting reward and recognition programs, and building plans
+              to keep the change alive.</p>
+
+            <div class="grid-container">
+
+              <div *ngFor="let data of this.item5; let i= index" class="timeline5 timeline">
+                <div *ngIf="data.title" [innerHtml]="data.title" class="title"> </div>
+                <div *ngIf="data.desc" [innerHtml]="data.desc" class="desc1"> </div>
+                <!--<div *ngIf="data.desc1" [innerHtml]="data.desc" class="descrip"> </div>-->
+                <div *ngIf="data.image">
+                  <div class="image" [style.background-image]="'url('+data.image+')'"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<div class="row fade_up" id="icon_box_panel">
+        <div class="column boxes">
+          <div class="square">
+            <div class="divider" (mouseover)="selectedItem = 1" (mouseout)="selectedItem = 0"
+              [ngClass]="{'normal': selectedItem == 0, 'zoom':selectedItem == 1}">
+              <div class="col1">
+                <img src="assets/images/S6_P1.png">
+              </div>
+              <div class="col1 align">
+                <h5>Strategic People Transformation</h5>
+              </div>
+            </div>
+
+            <div [@animate]="flyIn2" *ngIf="selectedItem == 1" class="hide">
+              <div class="content" [ngClass]="{'brand_bg' : selectedItem == 1 }">
+                <p class="head">Strategizing and integration of People Transformation</p>
+
+                <ul class="list">
+                  <li>People focused transformation strategy and planning: transformation pacing, phasing, risk
+                    mitigation,
+                    and integration approach of all other practice areas</li>
+                  <li>Partners with E/F TL, Ent or Fun HR Leader, BHR, HR TMO Leader, Global Incluson & Diversity and
+                    other
+                    TP COE partners</li>
+
+                </ul>
+
+              </div>
+            </div>
+          </div>
+          <div class="square">
+            <div class="divider" (mouseover)="selectedItem = 2" (mouseout)="selectedItem = 0"
+              [ngClass]="{'normal': selectedItem == 0, 'zoom':selectedItem == 2}">
+              <div class="col2">
+                <img src="assets/images/S6_P2.png">
+              </div>
+              <div class="col2 align">
+                <h5>Leadership Engagement</h5>
+              </div>
+            </div>
+
+            <div *ngIf="selectedItem == 2" class="hide">
+              <div class="content" [@animate]="flyIn2" [ngClass]="{'col2' : selectedItem == 2 }">
+                <p class="head">Preparing and mobilizing our toptransformation leaders</p>
+
+                <ul class="list">
+                  <li>Senior Leadership Group Engagement Sessions</li>
+                  <li>Leadership team effectiveness</li>
+                  <li>Partners with Corporate Affairs, Corporate Strategy and TMO</li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="square">
+            <div class="divider" (mouseover)="selectedItem = 3" (mouseout)="selectedItem = 0"
+              [ngClass]="{'normal': selectedItem == 0, 'zoom':selectedItem == 3}">
+              <div class="col3">
+                <img src="assets/images/S6_P3.png">
+              </div>
+              <div class="col3 align">
+                <h5>Culture</h5>
+              </div>
+            </div>
+            <div *ngIf="selectedItem == 3" class="hide">
+              <div class="content" [@animate]="flyIn2" [ngClass]="{'col3' : selectedItem == 3 }">
+                <p class="head">Delivering high performance through inclusive behavior </p>
+                <ul class="list">
+                  <li>Culture Diagnostic & Action Planning</li>
+                  <li>Culture Roadmap for Cargill</li>
+                  <li>Partners across Talent and Total Rewards COE to integrate culture priorities into existing
+                    programs
+                    (i.e. leadership development, rewards & recognition, talent)</li>
+                  <li>Inclusion & Diversity</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="square">
+            <div class="divider" (mouseover)="selectedItem = 4" (mouseout)="selectedItem = 0"
+              [ngClass]="{'normal': selectedItem == 0, 'zoom':selectedItem == 4}">
+              <div class="col4">
+                <img src="assets/images/S6_P4.png">
+              </div>
+              <div class="col4 align">
+                <h5>Organization Design</h5>
+              </div>
+            </div>
+            <div *ngIf="selectedItem == 4" class="hide">
+              <div class="content" [@animate]="flyIn2" [ngClass]="{'col4' : selectedItem == 4 }">
+                <p class="head">A pro-active and fact-based approach to analyze and model an organization</p>
+                <ul class="list">
+                  <li>Organization design for:
+                    <br><br>
+                    <ul>
+                      <li>New strategies</li>
+                      <li>Integrations</li>
+                      <li>Customer-back (Zero-Based) Redesign</li>
+                    </ul>
+                  </li>
+                  <li>BHR and Manager capability build</li>
+                  <li>Partners with BHR and 3rd party</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="square">
+            <div class="divider" (mouseover)="selectedItem = 5" (mouseout)="selectedItem = 0"
+              [ngClass]="{'normal': selectedItem == 0, 'zoom':selectedItem == 5}">
+              <div class="col5">
+                <img src="assets/images/S6_P5.png">
+              </div>
+              <div class="col5 align">
+                <h5>Change</h5>
+              </div>
+            </div>
+            <div *ngIf="selectedItem == 5" class="hide">
+              <div class="content" [@animate]="flyIn2" [ngClass]="{'col5' : selectedItem == 5 }">
+                <p class="head">Enabling individuals, teams and organizations to transform</p>
+                <ul class="list">
+                  <li>Change leadership</li>
+                  <li>Initiative-based change management</li>
+                  <li>Large-scale change capability build</li>
+                  <li>Partners with TMO lead, initiative leader and BHR</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+         *ngIf="selectedItem == 1" 
+        <div class="content_panel">
+          <div [@animate]="flyIn" *ngIf="selectedItem == 1" class="responsive_hide">
+            <div class="content" [ngClass]="{'brand_bg' : selectedItem == 1 }">
+              <p class="head">Strategizing and integration of People Transformation</p>
+
+              <ul class="list">
+                <li>People focused transformation strategy and planning: transformation pacing, phasing, risk
+                  mitigation,
+                  and integration approach of all other practice areas</li>
+                <li>Partners with E/F TL, Ent or Fun HR Leader, BHR, HR TMO Leader, Global Incluson & Diversity and
+                  other
+                  TP COE partners</li>
+
+              </ul>
+
+            </div>
+          </div>
+          <div *ngIf="selectedItem == 2" class="responsive_hide">
+            <div class="content" [@animate]="flyIn" [ngClass]="{'col2' : selectedItem == 2 }">
+              <p class="head">Preparing and mobilizing our toptransformation leaders</p>
+
+              <ul class="list">
+                <li>Senior Leadership Group Engagement Sessions</li>
+                <li>Leadership team effectiveness</li>
+                <li>Partners with Corporate Affairs, Corporate Strategy and TMO</li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div *ngIf="selectedItem == 3" [@animate]="flyIn" [ngClass]="{'col3' : selectedItem == 3 }"
+            class="responsive_hide">
+            <div class="content">
+              <p class="head">Delivering high performance through inclusive behavior </p>
+              <ul class="list">
+                <li>Culture Diagnostic & Action Planning</li>
+                <li>Culture Roadmap for Cargill</li>
+                <li>Partners across Talent and Total Rewards COE to integrate culture priorities into existing programs
+                  (i.e. leadership development, rewards & recognition, talent)</li>
+                <li>Inclusion & Diversity</li>
+              </ul>
+            </div>
+          </div>
+
+          <div *ngIf="selectedItem == 4" class="responsive_hide">
+            <div class="content" [@animate]="flyIn" [ngClass]="{'col4' : selectedItem == 4 }">
+              <p class="head">A pro-active and fact-based approach to analyze and model an organization</p>
+              <ul class="list">
+                <li>Organization design for:
+                  <br><br>
+                  <ul>
+                    <li>New strategies</li>
+                    <li>Integrations</li>
+                    <li>Customer-back (Zero-Based) Redesign</li>
+                  </ul>
+                </li>
+                <li>BHR and Manager capability build</li>
+                <li>Partners with BHR and 3rd party</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div *ngIf="selectedItem == 5" class="responsive_hide">
+            <div class="content" [@animate]="flyIn" [ngClass]="{'col5' : selectedItem == 5 }">
+              <p class="head">Enabling individuals, teams and organizations to transform</p>
+              <ul class="list">
+                <li>Change leadership</li>
+                <li>Initiative-based change management</li>
+                <li>Large-scale change capability build</li>
+                <li>Partners with TMO lead, initiative leader and BHR</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>-->

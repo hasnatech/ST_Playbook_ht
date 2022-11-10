@@ -1,0 +1,190 @@
+
+
+<div id="od">
+  <div class="container size" >
+    <div class="slide7" >
+      <div class="text fade_up">
+        <p>OD increases the effectiveness of people in organizations through focusing on organizational change,
+          enhancing
+          performance, and alignment of the entire system and its interdependent parts: strategy, process, structure,
+          culture and people*. Delivering transformation value through our various practice areas.</p>
+      </div>
+
+
+      <div class="row fade_up" id="icon_box_panel">
+        <div class="column boxes">
+          <div class="square">
+            <div class="divider" (mousedown)="selectedItem = 1" [ngClass]="{'selected': selectedItem == 1}">
+              <div class="col1"  >
+                <img src="assets/images/S6_P1.png">
+              </div>
+              <div class="col1 align">
+                <h5>Strategic People Transformation</h5>
+              </div>
+            </div>
+
+          </div>
+          <div class="square">
+            <div class="divider" (mousedown)="selectedItem = 2" 
+            [ngClass]="{'selected': selectedItem == 2}">
+              <div class="col2">
+                <img src="assets/images/S6_P2.png">
+              </div>
+              <div class="col2 align">
+                <h5>Leadership Engagement</h5>
+              </div>
+            </div>
+
+     
+          </div>
+
+          <div class="square">
+            <div class="divider" (mousedown)="selectedItem = 3" 
+            [ngClass]="{'selected': selectedItem == 3}">
+              <div class="col3">
+                <img src="assets/images/S6_P3.png">
+              </div>
+              <div class="col3 align">
+                <h5>Culture</h5>
+              </div>
+            </div>
+        
+          </div>
+          <div class="square">
+            <div class="divider" (mousedown)="selectedItem = 4" 
+            [ngClass]="{'selected': selectedItem == 4}">
+              <div class="col4">
+                <img src="assets/images/S6_P4.png">
+              </div>
+              <div class="col4 align">
+                <h5>Organization Design</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="square">
+            <div class="divider" (mousedown)="selectedItem = 5" 
+            [ngClass]="{'selected': selectedItem == 5}">
+              <div class="col5">
+                <img src="assets/images/S6_P5.png">
+              </div>
+              <div class="col5 align">
+                <h5>Change</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *ngIf="selectedItem == 1" -->
+        <div class="content_panel">
+          <div [@animate]="flyIn" *ngIf="selectedItem == 1" class="responsive_hide">
+            <h2>What is Strategic People Transformation within OD?</h2>
+            <p>Strategic People Transformation mainly focuses on the people aspects around transformation. This specific practice area is key in integrating all other OD practice areas across Culture, Leadership Alignment, Change and Organization Design when looking at high impact, critical transformations across our organization.</p>
+         
+            <div class="grid-container">
+
+              <div *ngFor="let data of this.item1; let i= index"  class="timeline1 timeline">
+                <div *ngIf="data.title" [innerHtml]="data.title" class="title"> </div>
+                <div *ngIf="data.desc" [innerHtml]="data.desc" class="desc"> </div>
+                <div *ngIf="data.image"><div class="image" [style.background-image]="'url('+data.image+')'"></div>
+                </div>
+              </div>
+            
+          </div>
+          </div>
+          <div [@animate]="flyIn" *ngIf="selectedItem == 2" class="responsive_hide">
+            
+              <h2>What is Leadership Engagement within OD?</h2>
+              <p>The Leadership Engagement practice area focuses on strengthening and accelerating achievement of our strategy by preparing and mobilizing our top leaders. In addition, the practice area provides a framework and tools for forming and sustaining high-performing teams.</p>
+           
+              <div class="grid-container">
+  
+                <div *ngFor="let data of this.item2; let i= index"  class="timeline2 timeline">
+                  <div *ngIf="data.title" [innerHtml]="data.title" class="title"> </div>
+                  <div *ngIf="data.desc" [innerHtml]="data.desc" class="desc"> </div>
+                  <div *ngIf="data.image"><div class="image" [style.background-image]="'url('+data.image+')'"></div>
+                  </div>
+                </div>
+              
+            </div>
+            </div>
+          
+
+          <div *ngIf="selectedItem == 3" [@animate]="flyIn" class="responsive_hide">
+            <h2>What is Culture within OD?</h2>
+              <p>In developing a high performance culture, working with leadership is key. 
+                Resolving cultural issues and developing a high-performance culture requires a 
+                thoughtful exploration of the beliefs and assumptions about the organization, 
+                its people (including leaders), the relations with customers & the industry, the 
+                systems, structure & processes. Note it requires long term perspective and systemic 
+                approach to realize value (including changing people processes). Also requires 
+                discipline and intentional culture development and mechanisms for reinforcing new 
+                behaviors effectively.
+              </p>
+           
+              <div class="grid-container">
+  
+                <div *ngFor="let data of this.item3; let i= index"  class="timeline3 timeline">
+                  <div *ngIf="data.title" [innerHtml]="data.title" class="title"> </div>
+                  <div *ngIf="data.desc" [innerHtml]="data.desc" class="desc"> </div>
+                  <div *ngIf="data.image"><div class="image" [style.background-image]="'url('+data.image+')'"></div>
+                  </div>
+                </div>
+              
+            </div>
+          </div>
+
+          <div *ngIf="selectedItem == 4" [@animate]="flyIn" class="responsive_hide">
+            <h2>What is Organization Design within OD?</h2>
+            <p>Organization Design focuses on a proactive and fact-based approach to analyze and 
+              model an organization in terms of structure, process, governance (decision rights), 
+              people efforts, costs and operating model efficiency and effectiveness. When the right 
+              Organization Design methodology and tools are applied, we can ensure that the business 
+              had the right capabilities and capacity to drive strategic success. 
+            </p>
+         
+            <div class="grid-container">
+
+              <div *ngFor="let data of this.item4; let i= index"  class="timeline4 timeline">
+                <div *ngIf="data.title" [innerHtml]="data.title" class="title"> </div>
+                <div *ngIf="data.desc" [innerHtml]="data.desc" class="desc"> </div>
+                <div *ngIf="data.image"><div class="image" [style.background-image]="'url('+data.image+')'"></div>
+                </div>
+              </div>
+            
+          </div>
+          </div>
+
+
+          <div *ngIf="selectedItem == 5" [@animate]="flyIn" class="responsive_hide">
+            <h2>What is Change within OD?</h2>
+            <p>Change management provides a structured approach to enabling individuals, teams and 
+              organizations to transition from a current state to a desired future state. Within Change
+               we help our clients tell the stories of the “why” in ways that inspire curiosity and 
+               exploration about the change. We guide leaders through change, encouraging them to model
+                it early and often and focus on helping people adopt change by teaching new knowledge,
+                 skills, and abilities, instituting reward and recognition programs, and building plans
+                  to keep the change alive.</p>
+         
+            <div class="grid-container">
+
+              <div *ngFor="let data of this.item5; let i= index"  class="timeline5 timeline">
+                <div *ngIf="data.title" [innerHtml]="data.title" class="title"> </div>
+                <div *ngIf="data.desc" [innerHtml]="data.desc" class="desc"> </div>
+                <div *ngIf="data.descrip" [innerHtml]="data.descrip" class="descrip"> </div>
+                <div *ngIf="data.image"><div class="image" [style.background-image]="'url('+data.image+')'"></div>
+                </div>
+              </div>
+            
+          </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,396 @@
+@import '../../variables';
+
+.search {
+  width: 1055px;
+  height: 53px;
+  position: absolute;
+  border-radius: 5px;
+  z-index: 7;
+  margin-left: -5px;
+
+  margin-top: -58px;
+  //border: 1px solid #ccc;
+  padding: 0px 10px;
+  padding-left: 18px;
+
+  input {
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    border: none;
+    outline-style: none;
+    background-color: #fff;
+  }
+}
+
+.logo {
+  padding-top: 10px;
+  position: relative;
+  z-index: 2;
+
+  img {
+    width: 8%;
+  }
+
+}
+.cursor{
+  cursor:pointer;
+}
+.logohome {
+
+  padding-top: 10px;
+  position: relative;
+  z-index: 2;
+
+  img {
+    width: 10%;
+  }
+
+}
+
+.menu {
+  background-color: #fff;
+  border-radius: 5px;
+  -moz-border-radius:5px;
+  position: absolute;
+
+  top: 80px;
+  z-index: 3;
+  max-width: 1140px;
+  width: 100%;
+  box-shadow: 0 5px 5px 0 rgba(117, 117, 117, 0.361);
+   /*-webkit-box-shadow:0 5px 5px 0 #7575755c;
+-moz-box-shadow:0 5px 5px 0 #7575755c;
+  box-shadow:0 5px 5px 0 #7575755c;
+  -o-box-shadow:0 5px 5px 0 #7575755c;
+  	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#7575755c')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#7575755c');*/
+  transition: all 0.5s;
+  margin-top: -20px;
+  margin-left: -5px;
+  //padding-left: 6px;
+
+
+  .image_white {
+    display: none;
+  }
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-width: 101%;
+    z-index: 5;
+    background-color: $brand-color;
+    margin-top: 0px;
+
+
+    .search {
+      width: 92%;
+      height: 58px;
+      position: absolute;
+      border-radius: 5px;
+      z-index: 7;
+      margin-left: -5px;
+
+      margin-top: -60px;
+      //border: 1px solid #ccc;
+      padding: 0px 10px;
+      padding-left: 25px;
+      color: #fff;
+
+      input {
+        width: 100%;
+        height: 100%;
+        font-size: 25px;
+        border: none;
+        outline-style: none;
+
+        background-color: $brand-color;
+        color: #fff;
+
+      }
+
+      ::placeholder {
+        color: #eeeeee;
+      }
+    }
+
+    .image_white {
+      display: block;
+      margin-left: -70px;
+    }
+
+    ul li a {
+      color: #fff;
+
+
+    }
+
+    ul {
+      li {
+        .image {
+          img {
+            display: none;
+          }
+        }
+
+        .dropdown-content1 {
+          // margin-top: 300px;
+          top: 99%;
+          min-width: 330%;
+
+          a {
+
+            color: $brand-color;
+          }
+        }
+
+        .dropdown-content {
+          top:99%;
+
+          a {
+            color: $brand-color;
+          }
+        }
+      }
+    }
+
+    #logo {
+      display: block;
+    }
+  }
+
+
+
+  #logo {
+    display: none;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0px;
+
+
+
+      a {
+        padding: 10px 0;
+        text-decoration: none;
+        color: $black;
+        color: $brand-color;
+        // text-align: center;
+        font-weight: bold;
+
+        &.active {
+          color: $secondary_color;
+          //font-weight: bold;
+        }
+
+        &:hover {
+          color: $secondary_color;
+          // font-weight: bold;
+        }
+
+      }
+    }
+  }
+}
+
+.menu_icon {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  padding: 10px;
+  background-color: $brand-color;
+  z-index: 6;
+
+
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+
+
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-7px, -4px);
+  transform: rotate(45deg) translate(-7px, -4px);
+}
+
+.small {
+  opacity: 0;
+  position: absolute;
+  background-color: #f1f1f1;
+  //min-width: 300px;
+  min-width: 100%;
+  margin-top: 40px;
+  padding: 20px;
+
+}
+
+.dropdown {
+  position: relative;
+  
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  //min-width: 300px;
+  min-width: 113%;
+  top: calc(100% - 2px);
+  left : 0px;
+  //margin-left: 1px;
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+    
+
+}
+
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  //min-width: 300px;
+  min-width: 330%;
+  top: calc(100% - 2px);
+  left : 0px;
+  /*margin-left: 50px;*/
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+
+}
+
+
+.dropdown-content,
+.dropdown-content1 {
+  a {
+
+    text-decoration: none;
+    display: block;
+
+    font-size: 90%;
+
+
+  }
+}
+
+.dropdown-content,
+.dropdown-content1 {
+
+  a:hover {
+    background-color: #eee;
+
+  }
+}
+
+.dropdown:hover {
+
+  .dropdown-content,
+  .dropdown-content1 {
+    display: block;
+
+  }
+}
+
+.dropdown-content,
+.dropdown-content1 {
+
+  a:last-child {
+    &:hover {
+
+      border-bottom-left-radius: 10px 10px;
+      border-bottom-right-radius: 10px 10px;
+    }
+  }
+}
+
+ul {
+  li {
+    .dropdown-content {
+      a {
+        padding-left: 18px;
+      }
+    }
+  }
+}
+
+ul {
+  li {
+    .dropdown-content1 {
+      a {
+        padding: 15px;
+      }
+    }
+  }
+}
+
+@include lg {
+  .menu_icon {
+    display: block;
+  }
+
+  .menu {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 300px;
+    transform: translateX(100%);
+    padding: 70px 50px;
+    background-color: $brand-color;
+
+    /*display: none;*/
+    &.open {
+      transform: translateX(0px);
+    }
+
+    ul {
+      flex-direction: column;
+
+      li {
+        justify-content: left;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

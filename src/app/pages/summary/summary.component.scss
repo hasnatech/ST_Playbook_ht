@@ -1,0 +1,28 @@
+@import '../../variables';
+
+.half_banner {
+  
+  .bg_img {
+    background-image: url('../../../assets/images/partner_bg.png');
+  }
+}
+
+.section {
+  background-color: #fff;
+}
+
+h2{
+    color:$brand_color;
+}
+
+ .full_width{
+   margin: 20px;
+ }
+
+ .width-50{
+   width: 50%;
+   margin-right: 10px;
+   &:last-child{
+    margin-right: 0px;
+   }
+ }

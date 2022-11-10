@@ -1,0 +1,19 @@
+<div id="card-trigger" >
+  <div class="container" id="cardscroll">
+    <div class="card-holder">
+      <div class="card" *ngFor="let data of this.items">
+        <div class="left">
+          <div class="icon">
+            <img src="{{data.image}}" alt="">
+          </div>
+        </div>
+        <div class="right">
+          <div class="title" [innerHtml]="data.title">
+          </div>
+          <div class="body" [innerHtml]="data.description">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

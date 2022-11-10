@@ -1,0 +1,52 @@
+<div class="section">
+  <div class="container">
+    <div id="slide9" (window:resize)="onResize($event)" class="slide9">
+      <div>
+        <img class="center-img" src="assets/images/S9_P1.png">
+      </div>
+      <div class="left" (click)="onclick1()">
+        <div class="pad">
+          <p><b>Centers of Expertise</b></p>
+        </div>
+        <div class="text-panel" *ngIf="hidden1" [@animate]="flyIn">
+          <div class="para1">
+            <p><b>Talent & Performance and Total Rewards</b></p>
+          </div>
+          <div class="para2">
+            <p><b>Thought leadership, strategies and solutions</b> provided by a global network of deep subject
+              matter experts. Embeds essential HR capabilities across HR and Organization.</p>
+          </div>
+        </div>
+      </div>
+      <div class="right" (click)="onclick2()">
+        <div class="pad">
+          <p><b>Business HR</b></p>
+        </div>
+        <div class="text-panel" *ngIf="hidden2" [@animate]="flyIn">
+          <div class="para1">
+            <p><b>Enterprises and Functions</b></p>
+          </div>
+          <div class="para2">
+            <p><b>Decision support</b> for leadership teams and the creation of <b>business-focused people
+                and organizational strategies.</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="bottom" (click)="onclick3()">
+        <div class="pad">
+          <p><b>Global HR Solutions</b></p>
+        </div>
+        <div class="text-panel" *ngIf="hidden3" [@animate]="flyIn">
+          <div class="para1">
+            <p><b>Geographically-based Delivery Teams</b></p>
+          </div>
+          <div class="para2">
+            <p><b>Delivery</b> of HR processes and solutions; including <b>HR</b>
+              <b>consulting and operations.</b> CBS is a key component
+              of this organization.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

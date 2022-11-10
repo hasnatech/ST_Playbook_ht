@@ -1,0 +1,37 @@
+<div class=" light_bg" id="flipcard">
+  <div class="section">
+    <div class="container">
+      <div class="inst" [innerHtml]="instruction">
+      </div>
+
+      <div class="card-panel">
+        <div  class="card" *ngFor="let data of this.items; let i=index" (click)="tab(i)"
+          [ngClass]="{'selected': selectedtab[i] == true}">
+          <div class="face front">
+            <div class="zoom">
+              <img src="{{data.image}}">
+              <div class="flip-title" [innerHtml]="data.title">
+              </div>
+            </div>
+          </div>
+          <div class="face back">
+            <div class="text">
+              <div [innerHtml]="data.description"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="space"></div>
+
+    </div>
+    <div  class="container">
+      <div id="down_arr2" class="image">
+        <a href="#videoscroll">
+          Scroll Down
+          <img src="assets/images/Arrow_down1.png" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,125 @@
+<div id="slide5" class="half_banner">
+  <div class="bg_img">
+    <div class="container">
+      <div class="title_panel">
+        <h2 class="title">{{heading}}
+
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div  id="fit">
+  <div class="container size">
+      <app-breadcrumb [navArr]="[{link:'about', text:'Organization Development'}, {link:'How_we_partner', text:'How we partner'}]"></app-breadcrumb>
+    <div class="slide8">
+      <div class="row">
+        <div class="left">
+          <div class="left_contents">
+            <div class="content">
+              <p class="para1"><b>The Talent Performance (TP) domain is responsible for overseeing the design and
+                  delivery
+                  of business specific TP solutions, including consultative services to support the needs of the
+                  business
+                  and to help Organization create a talent-based competitive advantage. This includes ensuring alignment of
+                  activities with the global TP strategy and programs.</b></p>
+              <p class="para2"><b>This domain facilitates and delivers corporate TP solutions and processes areas as
+                  defined by the Talent COE.
+                </b></p>
+
+            </div>
+            <div id="slide9" class="slide9">
+              <div>
+                <img class="center-img" src="assets/images/S9_P1.png">
+              </div>
+              <div class="left1 same" (click)="onclick1()">
+                <div class="pad">
+                  <b>Centers of Expertise</b>
+                </div>
+              </div>
+              <div class="text-panel" *ngIf="hidden1" [@animate]="flyIn">
+                <div class="para1">
+                  <b>Talent & Performance and Total Rewards</b>
+                </div>
+                <div class="para2">
+                  <b>Thought leadership, strategies and solutions</b> provided by a global network of deep subject
+                    matter experts. Embeds essential HR capabilities across HR and Organization.
+                </div>
+              </div>
+
+              <div class="right same" (click)="onclick2()">
+                <div class="pad">
+                  <b>Business HR</b>
+                </div>
+              </div>
+              <div class="right_panel text-panel" *ngIf="hidden2" [@animate]="flyIn">
+                <div class="para1">
+                  <b>Enterprises and Functions</b>
+                </div>
+                <div class="para2">
+                  <b>Decision support</b> for leadership teams and the creation of <b>business-focused people
+                      and organizational strategies.</b>
+                </div>
+              </div>
+
+              <div class="bottom same" (click)="onclick3()">
+                <div class="pad">
+                  <b>Global HR Solutions</b>
+                </div>
+                <div class="text-panel" *ngIf="hidden3" [@animate]="flyIn">
+                  <div class="para1">
+                    <b>Geographically-based Delivery Teams</b>
+                  </div>
+                  <div class="para2">
+                    <b>Delivery</b> of HR processes and solutions; including <b>HR</b>
+                      <b>consulting and operations.</b> CBS is a key component
+                      of this organization.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hide">
+              <img src="assets/images/S8_P2.png">
+            </div>
+
+          </div>
+          <div class="image">
+            <img src="assets/images/S8_P1.png">
+          </div>
+
+        </div>
+        <div class="right">
+
+          <div class="small">
+            <div class="text2">
+              <p><b>The focus of Organization Development (OD) COE is providing thought-leadership as well ownership of strategy and
+              solution design around the OD specific practice areas. We work closely with the Talent COE partners, but also with
+              partners beyond the TP COE domain, not limiting to:</b></p>
+              <ul class="list">
+                <li>Senior Leadership Group</li>
+                <li>Enterprise & Function BHR</li>
+                <li>Transformation Management Office and Transformation Office (for example People Leads)</li>
+                <li>GHRS TP Domain (see below)</li>
+              </ul>
+            </div>
+
+            <div class="text3">
+              <p><b>The GHRS TP Domain oversees the delivery of business specific talent performance solutions,
+                  including consultative services to support the needs of the business. This includes ensuring
+                  alignment of activities with the global talent performance strategy and programs, along
+                  with focus on continuous improvement and inclusion and diversity. Some key areas:</b></p>
+              <ul class="list">
+                <li>Organization Development (OD) (e.g. Culture, Leadership/Team Engagement, Culture, Change Management,
+                  Organization Design)</li>
+                <li>Talent Management (e.g. Talent Discussions, Talent Development, Recognition, Inclusion & Diversity
+                  strategy, etc)</li>
+                <li>Learning & Development (e.g. Education & Learning strategy, Capability Building, Leadership/Team Development, Coaching/Mentoring, etc)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

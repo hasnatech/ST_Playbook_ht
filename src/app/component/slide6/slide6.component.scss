@@ -1,0 +1,150 @@
+@import '../../variables';
+
+.slide6 {
+
+  .row1,
+  .row2,
+  .row3 {
+    display: flex;
+    margin: 10px 20px;
+
+    .text {
+      display: flex;
+      width: 30%;
+      color: $brand_color_lite;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      .edittext {
+        color: $black;
+      }
+    }
+
+    .content1 {
+      background-color: $brand_color_dark;
+      padding: 10px;
+    }
+
+    .content2 {
+      background-color: $secondary_color;
+      padding: 10px;
+    }
+
+    .content3 {
+      background-color: $brand_color_dark;
+      padding: 10px;
+    }
+
+    .content {
+      /*font-size: 18px;*/
+      color: #fff;
+      width: 95%;
+      margin-left: 3%;
+      padding: 2% 4%;
+      //background-color: $brand_color;
+
+      .column_1,
+      .column_3 {
+        display: flex;
+        margin: 0px 20px;
+      }
+
+      .column_1 {
+        .col1 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 33.3333%;
+          background-color: #fff;
+          text-align: center;
+          margin-left: 15px;
+          border-radius: 10px 0px 10px 0px;
+          color: $brand_color;
+          padding: 10px;
+
+          p {
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+          }
+        }
+
+
+      }
+
+      .column_3 {
+        .divider {
+          width: 33%;
+          .col1,
+          .col2,
+          .col3,
+          .col4,
+          .col5 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            padding: 5px;
+            text-align: center;
+            margin: 5px 10px;
+            padding-top: 10px;
+
+          }
+
+          img {
+            width: 50px;
+            height: 50px;
+          }
+
+          .col1 {
+            background-color: $brand_color;
+          }
+
+          .col2 {
+            background-color: $brand_color_lite;
+          }
+
+          .col3 {
+            background-color: $green_dark;
+          }
+
+          .col4 {
+            background-color: #666666;
+          }
+
+          .col5 {
+            background-color: $secondary_color;
+          }
+
+          .align {
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@include md {
+  .slide6 {
+
+    .row1,
+    .row2,
+    .row3 {
+      flex-direction: column;
+
+      .text {
+        width: 100%;
+      }
+      .column_3{
+      width: 100%;
+      .divider{
+        width: 100%;
+       
+       
+      }
+      }
+    }
+  }
+}

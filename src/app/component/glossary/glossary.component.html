@@ -1,0 +1,32 @@
+<div id="slide5" class="half_banner">
+  <div class="bg_img">
+    <div class="container">
+      <div class="title_panel">
+        <h2 class="title">{{heading}}
+
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container size">
+  <div class="glossarypage">
+    <div class="content">
+
+      <div *ngFor="let data of this.letters; let i = index">
+        <div class="letter" [ngClass]="{'selected' : selectedLetter == data , 'dissabled' : !isGetdata(data)} " [innerHtml]="data"  (click)="selectedLetter = data"></div>
+      </div>
+
+
+    </div>
+  </div>
+
+  
+  <div class="grid-container">
+    <div *ngFor="let data of this.contents | search : selectedLetter ; let i = index " class="split">
+      <div class="title" [innerHtml]="data.title "></div>
+      <div class="descrip" [innerHtml]="data.content"></div>
+    </div>
+  </div>
+</div>

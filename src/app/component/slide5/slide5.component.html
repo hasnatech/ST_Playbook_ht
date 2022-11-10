@@ -1,0 +1,32 @@
+
+<div id="slide5" class="about_od">
+  <div class="bg_img">
+    <div class="container">
+      <div class="title_panel">
+        <h2 class="title">{{heading}}
+         <p class="para" [innerHtml]="description"></p>
+        </h2>
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div id="slide5_card">
+  <div class="container">
+    <div class="card-group">
+      <div class="card" *ngFor="let data of this.items">
+        <div>
+            <a routerLink="/{{data.link}}" routerLinkActive="active">
+              <div class="icon">
+            <img src="{{data.image}}" alt="">
+          </div>
+          <div class="title" [innerHtml]="data.title">
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

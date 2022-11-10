@@ -1,0 +1,55 @@
+@import '../../variables';
+
+.half_banner {
+  
+  .bg_img {
+    background-image: url('../../../assets/images/partner_bg.png');
+  }
+}
+h3{
+    color: $brand_color;
+    margin-block-start: 0em;
+}
+
+ul{
+    li
+    {
+        margin-bottom:10px;
+    }
+}
+
+.width-50{
+    width: 50%;
+    margin-right: 10px;
+    &:last-child{
+     margin-right: 0px;
+    }
+  }
+
+  .box{
+      .title{
+          font-weight:bold;
+      }
+      p{
+          margin:0px;
+      }
+      ul > li{
+        margin:0px;
+      }
+      color:white;
+      padding:20px;
+      margin:0px;
+      margin-right:100px;
+      margin-top: -20px;
+      &:nth-child(1){
+          background-color:#1e9d8b;
+          margin-top: 0px;
+      }
+      &:nth-child(2){
+        margin-left:100px;
+        margin-right:0px;
+      }
+      &:nth-child(3){
+        background-color:$brand_color_dark;
+    }
+  }

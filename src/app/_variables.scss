@@ -1,0 +1,89 @@
+$brand_color: #007681;
+$secondary_color: #daaa00;
+$black: #111;
+$brand_color_dark:#005F86;
+$brand_color_lite:#279989;
+$green_dark:#658D1B;
+$green_lite:#ABAD25;
+$secondary_color_orange:#CF7F00;
+$secondary_color_red:#BE531C;
+$secondary_color_pink:#9E2A2F;
+$grey: #808080;
+$light_grey: #ebebeb;
+
+.light_bg{
+  background-color: $light_grey;
+}
+
+.brand_bg{
+  background-color: $brand_color;
+}
+.green_dark_bg{
+  background-color: $green_dark;
+}
+.green_lite{
+  background-color: $green_lite;
+}
+
+.secondary_color_orange{
+  background-color: $secondary_color_orange;
+}
+.secondary_color_yellow{
+  background-color:$secondary_color;
+}
+
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (max-width: #{$screen-md-min}) {
+    @content;
+  } 
+}
+
+// Large devices
+@mixin lg {
+  @media (max-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (max-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+
+/*example
+@include sm {
+  .grid {
+    grid-template-columns: none;
+    .item:first-child {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  }
+}
+ */

@@ -1,0 +1,141 @@
+<div id="slide5" class="half_banner">
+  <div class="bg_img">
+    <div class="container">
+      <div class="title_panel">
+        <h2 class="title">{{heading}}
+          <p class="para">
+            Strategic People Transformation is one of the
+
+            <a routerLink="/Our_OD" routerLinkActive="active">OD Practice Areas</a> and covers the diagnosis of
+            organizational shifts which have a people impact and is needed to achieve transformational objectives and
+            advises on pacing, risk mitigation and actions that result in sustainable change.
+          </p>
+
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+<!--<div class="container">
+</div>-->
+<div class="container size2">
+  <app-breadcrumb
+    [navArr]="[{link:'Strategic_People_Transformation', text:'Strategic People Transformation'}]">
+  </app-breadcrumb>
+  <div class="slide7 ">
+    <div class="mainpage">
+      <div class="row fade_up">
+        <div class="column boxes">
+          <div class="square">
+            <div class="divider" (mousedown)="selectedItem = 1" [ngClass]="{'selected': selectedItem == 1}">
+              <div class="box">
+                <img src="assets/images/spt1.png">
+              </div>
+              <div class="box align">
+                <p>How is strategy defined in Organization?</p>
+              </div>
+
+              <div [@animate]="flyIn" *ngIf="selectedItem == 1" class="responsive_hide">
+                <div class="container">
+                  <div class="content">
+                    <div class="head">
+                      <p>A strategy can be defined as a long term plan to help achieve an organization’ objectives. It
+                        states how business should be conducted to achieve desired goals and is managed through a
+                        strategic framework.</p>
+                      <p>Cargill’s <a>Game Plan for Success 2.0</a> is a great real example of a strategic framework
+                        to align the whole company on where we are heading and how we will get there.</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="square">
+            <div class="divider" (mousedown)="selectedItem = 2" [ngClass]="{'selected': selectedItem == 2}">
+              <div class="box">
+                <img src="assets/images/spt2.png">
+              </div>
+              <div class="box align">
+                <p>How does Strategic People Transformation support?</p>
+              </div>
+              <div *ngIf="selectedItem == 2" class="responsive_hide">
+                <div class="container">
+                  <div class="content" [@animate]="flyIn">
+                    <div class="head">
+                      <p>When defining the companywide as well as business specific priorities, it is key to start
+                        transforming the organizational capabilities to translate our business strategy into execution.
+                      </p>
+                      <p>It is our purpose to assess high impact/priority transformations with impact on people and help
+                        bring together our OD practices in a holistic people transformation approach, ensuring a fit for
+                        purpose and value driven approach that aligns to the overall HR strategy
+                      </p>
+                       
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="square">
+            <div class="divider" (mousedown)="selectedItem = 3" [ngClass]="{'selected': selectedItem == 3}">
+              <div class="box">
+                <img src="assets/images/spt3.png">
+              </div>
+              <div class="box align">
+                <p>When is Strategic People Transformation critical?</p>
+              </div>
+              <div *ngIf="selectedItem == 3" [@animate]="flyIn" class="responsive_hide">
+                <div class="container">
+                  <div class="content">
+                    <div class="head">
+                      <p>Strategic People Transformation is critical in the following situations:</p>
+                      <ul>
+                        <li>When collaborating with People Leads to understand and anticipate on the OD needs following
+                          portfolio rationalization activities</li>
+                        <li>In transformations with high workforce impacts and supporting in transformation programs
+                          supporting new (cross) Business Strategies, Leadership Teams, and/or Operating Model
+                          transformations</li>
+                        <li>When creating an overall OD transformation approach cross businesses and partnering with the
+                          various OD practices ensuring an integrated way of working.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="square">
+            <div class="divider" (mousedown)="selectedItem = 4" [ngClass]="{'selected': selectedItem == 4}">
+              <div class="box">
+                <img src="assets/images/S6_P1.png">
+              </div>
+              <div class="box align">
+                <p>Strategic People Transformation OD Practice Area</p>
+              </div>
+              <div *ngIf="selectedItem == 4" class="responsive_hide">
+                <div class="container">
+                  <div class="content" [@animate]="flyIn">
+                    <div class="head">
+                      <p>Focusing on the people aspect of transformation, this specific practice area is key in
+                        integrating all other OD practice areas when looking at high impact, critical transformations
+                        across our organization.</p>
+                      <p>Click <a href="#/Our_OD">here</a> to learn more</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

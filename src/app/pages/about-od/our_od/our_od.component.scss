@@ -1,0 +1,615 @@
+@import '../../../variables';
+
+#icon_box_panel {
+  min-height: 500px;
+}
+
+.half_banner {
+
+  .bg_img {
+    background-image: url('../../../../assets/images/od_bg.png');
+  }
+}
+
+
+.our_od {
+  .text {
+    p {
+      margin-block-start: 0em;
+    }
+  }
+
+  .boxes {
+
+
+    .divider {
+      transition: all 0.5s;
+    }
+  }
+
+  .row {
+    .column {
+
+      /*margin: 10px 30px;*/
+      display: flex;
+
+      .hide {
+        display: none;
+      }
+
+      .square {
+        width: 100%;
+      }
+
+      .divider {
+        width: 100%;
+        cursor: pointer;
+
+
+        .col1,
+        .col2,
+        .col3,
+        .col4,
+        .col5 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          /*padding: 5px;*/
+          text-align: center;
+          margin: 0px 3px;
+          padding-top: 10px;
+          color: #fff;
+          background-color: #999999;
+
+        }
+
+        img {
+          width: 50px;
+          height: 50px;
+          padding-top: 26px;
+        }
+
+
+
+        .align {
+          /*height: 120px;*/
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.row {
+  .column {
+    .square {
+
+      .divider.selected,
+      .divider:hover {
+        .col1 {
+          background-color: $green_lite;
+        }
+      }
+    }
+  }
+}
+
+.panel1 {
+  h2 {
+    color: $green_lite;
+  }
+}
+
+.row {
+  .column {
+    .square {
+
+      .divider.selected,
+      .divider:hover {
+        .col2 {
+          background-color: $green_dark;
+        }
+      }
+    }
+  }
+}
+
+.row {
+  .column {
+    .square {
+
+      .divider.selected,
+      .divider:hover {
+        .col3 {
+          background-color: $brand_color_lite;
+        }
+      }
+    }
+  }
+}
+
+.row {
+  .column {
+    .square {
+
+      .divider.selected,
+      .divider:hover {
+        .col4 {
+          background-color: $brand_color;
+        }
+      }
+    }
+  }
+}
+
+.row {
+  .column {
+    .square {
+
+      .divider.selected,
+      .divider:hover {
+        .col5 {
+          background-color: $brand_color_dark;
+        }
+      }
+    }
+  }
+}
+
+.content_panel {
+
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 25% 25% 25%;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-bottom: 30px;
+
+    .timeline {
+      min-height: 150px;
+
+      .title {
+        padding: 0px 20px;
+        padding-top: 10px;
+      }
+
+      .desc1,
+      .descrip {
+        padding: 0px 20px;
+      }
+    }
+
+    //GRID
+    .timeline:nth-child(1) {
+      -ms-grid-column: 1;
+      grid-column-start: 1;
+      -ms-grid-column-span: 2;
+      grid-column-end: 3;
+      -ms-grid-row: 1;
+      grid-row-start: 1;
+      -ms-grid-row-span: 2;
+      grid-row-end: 3;
+
+    }
+
+    .timeline:nth-child(2) {
+
+      -ms-grid-column: 3;
+      grid-column-start: 3;
+      -ms-grid-column-span: 2;
+      grid-column-end: 5;
+      -ms-grid-row: 2;
+      grid-row-start: 2;
+      -ms-grid-row-span: 1;
+      grid-row-end: 3;
+
+    }
+
+    .timeline:nth-child(3) {
+
+      -ms-grid-row: 1;
+      grid-row-start: 1;
+      -ms-grid-row-span: 1;
+      grid-row-end: 2;
+      -ms-grid-column: 3;
+      grid-column-start: 3;
+      -ms-grid-column-span: 2;
+      grid-column-end: 5;
+
+
+    }
+
+    .timeline:nth-child(4) {
+      -ms-grid-row: 3;
+      grid-row-start: 3;
+      -ms-grid-row-span: 1;
+      grid-row-end: 4;
+      -ms-grid-column: 1;
+      grid-column-start: 1;
+      -ms-grid-column-span: 3;
+      grid-column-end: 4;
+    }
+
+    .timeline:nth-child(5) {
+      -ms-grid-row: 3;
+      grid-row-start: 3;
+      -ms-grid-row-span: 1;
+      grid-row-end: 4;
+      -ms-grid-column: 4;
+      grid-column-start: 4;
+      -ms-grid-column-span: 1;
+      grid-column-end: 5;
+    }
+
+
+  }
+
+  .para {
+    color: white;
+  }
+
+  //For 1 contnet
+  .timeline1:nth-child(1) {
+    
+    color: #fff;
+    background-color: $green_lite;
+
+    .title {
+      color: #fff;
+    }
+
+  }
+
+  .timeline1:nth-child(2) {
+
+    
+    background-color: #c7ca7d;
+
+    .title {
+      //color: $brand_color;
+    }
+
+  }
+
+  .timeline1:nth-child(3) {
+
+    
+    padding: 0px;
+
+    .title {
+      padding-top: 0px;
+    }
+
+  }
+
+  .timeline1:nth-child(4) {
+    
+    background-color: #e0e2b8;
+    color: black;
+
+
+  }
+
+  .timeline1:nth-child(5) {
+   
+    color: #fff;
+    background-color: $green_lite;
+
+    .title {
+      color: #fff;
+    }
+  }
+
+  // For 2nd Content
+  .timeline2:nth-child(1) {
+    
+    color: #fff;
+    background-color: $green_dark;
+
+    .title {
+      color: #fff;
+    }
+
+  }
+
+  .timeline2:nth-child(2) {
+
+    
+    background-color: #dcdeab;
+
+    .title {
+      //color: $brand_color;
+    }
+
+  }
+
+  .timeline2:nth-child(3) {
+
+    
+    padding: 0px;
+
+    .title {
+      padding-top: 0px;
+    }
+
+  }
+
+  .timeline2:nth-child(4) {
+    
+    background-color: #eeefd5;
+    color: black;
+
+
+  }
+
+  .timeline2:nth-child(5) {
+    
+    color: #fff;
+
+    background-color: $green_dark;
+
+    .title {
+      color: #fff;
+    }
+  }
+
+  // For 3rd Content
+  .timeline3:nth-child(1) {
+    
+    color: #fff;
+    background-color: $brand_color_lite;
+
+    .title {
+      color: #fff;
+    }
+
+  }
+
+  .timeline3:nth-child(2) {
+
+    
+    background-color: #99dedc;
+
+    .title {
+      //color: $brand_color;
+    }
+
+  }
+
+  .timeline3:nth-child(3) {
+
+    
+    padding: 0px;
+
+    .title {
+      padding-top: 0px;
+    }
+
+  }
+
+  .timeline3:nth-child(4) {
+   
+    background-color: #ccefed;
+    color: black;
+
+  }
+
+  .timeline3:nth-child(5) {
+   
+    color: #fff;
+    background-color: $brand_color_lite;
+
+    .title {
+      color: #fff;
+    }
+  }
+
+  // For 4th Content
+  .timeline4:nth-child(1) {
+    
+    color: #fff;
+    background-color: $brand_color;
+
+
+  }
+
+  .timeline4:nth-child(2) {
+
+   
+    background-color: #50a3b0;
+    color: #ffffff;
+
+
+  }
+
+  .timeline4:nth-child(3) {
+
+   
+    padding: 0px;
+
+    .title {
+      padding-top: 0px;
+    }
+
+  }
+
+  .content4 {
+    h2 {
+      color: $brand_color;
+    }
+  }
+
+  .timeline4:nth-child(4) {
+    
+    background-color: #bee0de;
+    color: black;
+
+
+  }
+
+  .timeline4:nth-child(5) {
+    
+    color: #fff;
+    background-color: $brand_color;
+
+    .title {
+      color: #fff;
+    }
+
+  }
+
+  .brand_color_dark {
+    h2 {
+      color: $brand_color_dark;
+    }
+  }
+
+  //For 5th Content
+  .timeline5:nth-child(1) {
+    
+    color: #fff;
+    background-color: $brand_color_dark;
+
+    .title {
+      color: #fff;
+    }
+  }
+
+  .timeline5:nth-child(2) {
+
+   
+    background-color: #4e8cae;
+    color: #fff;
+
+
+  }
+
+  .timeline5:nth-child(3) {
+
+    
+    padding: 0px;
+
+    .title {
+      padding-top: 0px;
+    }
+
+  }
+
+  .timeline5:nth-child(4) {
+    
+    background-color: #9dbad0;
+    color: black;
+
+
+  }
+
+  .timeline5:nth-child(5) {
+   
+    color: #fff;
+    background-color: $brand_color_dark;
+
+    .title {
+      color: #fff;
+    }
+  }
+
+
+
+}
+
+.image {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 220px;
+}
+
+@include sm {
+  .our_od {
+    .boxes {
+      &:hover {
+        .divider {
+          filter: blur(0px);
+          transform: scale(1);
+
+        }
+      }
+    }
+  }
+
+  .our_od {
+    text-align: center;
+
+    .row {
+      .column {
+        display: block;
+
+        .square {
+          margin-bottom: 40px;
+        }
+
+        .divider {
+          width: 100%;
+          text-align: left;
+
+
+        }
+
+        .hide {
+          display: block;
+
+          .col2,
+          .col3,
+          .col4,
+          .col5 {
+            display: block;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  .content_panel {
+    .responsive_hide {
+      display: none;
+    }
+
+  }
+
+}
+
+.green_dark {
+
+  .title,
+  h2 {
+    color: $green_dark;
+  }
+}
+
+.yellow {
+
+  .title,
+  h2 {
+    color: $secondary_color;
+  }
+}
+
+.brand_color_lite {
+
+  .title,
+  h2 {
+    color: $brand_color_lite;
+  }
+}
+
+.brand_color {
+
+  .title,
+  h2 {
+    color: $brand_color;
+  }
+}

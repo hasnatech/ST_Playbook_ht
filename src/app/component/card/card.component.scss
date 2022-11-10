@@ -1,0 +1,41 @@
+@import '../../variables';
+#card-trigger{
+  background-color:#4D4D4D; 
+  bottom: 0;
+}
+
+.card-holder {
+  display: flex;
+  
+
+  .card {
+    //background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    //box-shadow: 0 0 12px 6px #bbbbbb45;
+    flex: 1;
+    
+    .left,
+    .right {
+      margin: 20px;
+    }
+
+    .title {
+      margin-bottom: 10px;
+      color: #fff;
+      font-size: 130%;
+    }
+    .body{
+      color: #fff;
+    }
+  }
+
+}
+
+
+@include md {
+  .card-holder {
+      flex-direction: column;
+  }
+}

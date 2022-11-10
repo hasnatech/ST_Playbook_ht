@@ -1,0 +1,14 @@
+@import "../../variables";
+.block {
+  margin-bottom: 50px;
+  li{
+    margin-bottom: 15px;
+  }
+}
+
+.note {
+  border-radius: 5px;
+  background-color: $brand_color;
+  color: #fff;
+  padding: 20px;
+}

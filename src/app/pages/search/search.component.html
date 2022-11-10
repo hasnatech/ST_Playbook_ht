@@ -1,0 +1,33 @@
+<div class="half_banner">
+  <div class="bg_img">
+    <div class="container">
+      <div class="title_panel">
+        <h2 class="title">{{heading}}</h2>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container size">
+  <div class="search_result">
+    <h2>Search</h2>
+    <input type="text" class="searchText" [(ngModel)]="searchValue" (ngModelChange)="searchChange()">
+    <p class="searchLength">About {{result.length}} result(s)</p>
+    <div class="search_panel" *ngFor="let item of result">
+      <div class="title">
+        <a routerLink="/{{item.link}}">{{item.title}}</a>
+      </div>
+      <div class="content">
+        {{item.content}}
+      </div>
+      <div class="tagPanel">
+        
+        <ng-container *ngFor="let tag of item.resultKey let i=index">
+          <div class="tag" *ngIf="i<8 == true">
+            {{tag}}
+          </div>
+        </ng-container>
+        <div class="tag" *ngIf="item.resultKey.length>8">...</div>
+      </div>
+    </div>
+  </div>
+</div>

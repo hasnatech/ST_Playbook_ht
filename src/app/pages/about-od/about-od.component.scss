@@ -1,0 +1,168 @@
+@import '../../variables';
+
+.half_banner {
+  
+
+  .bg_img {
+    background-image: url('../../../assets/images/about.png');
+  }
+}
+
+.down_arr {
+  position: absolute;
+  right: 40px;
+  bottom: 100px;
+  text-align: center;
+  //position: relative;
+  animation: blinkAnimation 2s ease 0s infinite alternate;
+  height: 40px;
+  width: 40px;
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    height: 40px;
+    width: 40px;
+  } 
+}
+
+@keyframes blinkAnimation {
+  0% {
+    transform: translateY(-20px);
+
+  }
+
+  100% {
+    transform: translateY(-0px);
+  }
+}
+
+
+
+h2.title{
+  padding-bottom: 6px;
+}
+
+
+.para {
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0px 60px;
+  text-align: center;
+
+}
+
+.card-group {
+  display: flex;
+  /*margin-top: 120px;
+  margin-bottom: 90px;*/
+
+  a {
+    text-decoration: none;
+  }
+
+  &:hover {
+    .card {
+      //transform: scale(0.9);
+      //filter: blur(5px);
+    }
+
+  }
+
+  .card {
+    background-color: #fff;
+    margin: 20px;
+    display: flex;
+    /*flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+    box-shadow: 0 0 12px 6px rgba(187, 187, 187, 0.271);
+    flex: 1;
+    cursor: pointer;
+    transition: all 0.7s ease;
+    margin-top: 5px;
+
+    .holder {
+      margin: 60px 40px;
+    }
+
+    &:hover {
+      //background-color: #aaa;
+      //transform: scale(1.1);
+      background-color: $brand_color;
+
+      .title,
+      .content {
+        color: #fff;
+      }
+
+      hr {
+        background-color: #fff;
+      }
+
+      //filter: blur(0px);
+    }
+
+    .icon {
+      //text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .title {
+      margin: 10px 0px;
+      font-size: 120%;
+      font-weight: bold;
+
+    }
+
+    .title,
+    .content,
+    hr {
+      transition: all 0.7s ease;
+    }
+
+    hr {
+      height: 3px;
+      width: 40px;
+      margin-bottom: 20px;
+      background-color: $brand_color;
+      border: 0;
+      text-align: left;
+    }
+  }
+
+}
+
+.video {
+  text-align: center;
+  /*margin-top: -138px;*/
+  position: relative;
+  margin-bottom: 50px;
+  z-index: 1;
+
+  img {
+    width: 40%;
+  }
+
+  .playbutton {
+    max-width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    cursor: pointer;
+
+    img {
+      height: 50px;
+      width: 50px;
+    }
+
+  }
+}
+
+@include md {
+  .card-group {
+    flex-direction: column;
+  }
+}

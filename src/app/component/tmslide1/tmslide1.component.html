@@ -1,0 +1,190 @@
+<div id="slide5" class="half_banner">
+  <div class="bg_img">
+    <div class="container">
+      <div class="title_panel">
+        <h2 class="title">{{heading}}
+          <p class="para" [innerHtml]="description"></p>
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container size2">
+
+  <div class="down_arr">
+    <a href="#flipcard">
+      Scroll Down
+      <img src="assets/images/Arrow_down1.png" alt="">
+    </a>
+  </div>
+
+
+  <div class="slide7 ">
+
+    <div class="mainpage">
+      <app-breadcrumb [navArr]="[{link:'Trans_mgmt_off', text:'Transformation Management Office'}]">
+      </app-breadcrumb>
+      <div class="inst">Click on the picture to watch the video </div>
+      <div class="task">
+
+        <div class="video">
+          <a>
+            <img src="assets/images/video.png" alt=""></a>
+          <div class="link">
+            <p>Read more about the latest TMO progress update
+              <a>
+                here</a></p>
+          </div>
+        </div>
+
+        <div id="slide5_card">
+          <div class="container">
+
+            <div class="card-group">
+              <div class="card" *ngFor="let data of this.items; let i = index">
+                <div>
+                  <a *ngIf="i == 2" href="{{data.link}}" target="_blank" routerLinkActive="active">
+                    <div class="title" [innerHtml]="data.title">
+                    </div>
+                  </a>
+
+                  <a *ngIf="i != 2" routerLink="{{data.link}}" routerLinkActive="active">
+                    <div class="title" [innerHtml]="data.title">
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row fade_up">
+        <div class="inst">Click on the areas below to learn more  </div>
+        <div class="column boxes">
+          <div class="square">
+            <div class="divider" (mousedown)="selectedItem = 2" [ngClass]="{'selected': selectedItem == 2}">
+              <div class="box">
+                <img src="assets/images/tm1.png">
+              </div>
+              <div class="box align">
+                <p>What does the TMO organization look like? </p>
+              </div>
+              <div *ngIf="selectedItem == 2" class="responsive_hide">
+                <div class="container">
+                  <div class="content" [@animate]="flyIn">
+                    <p class="head">The TMO itself is a small centralized team that mobilizes and supports the
+                      transformation.</p>
+                    <p class="head">It sets and communicates program ambitions and intentions, tracks and monitors value
+                      generation, invests in, pilots and
+                      helps build new capabilities that will benefit all of Organization, and engages with all relevant
+                      stakeholders to coordinate
+                      and execute the decisions and priorities of the company.</p>
+                    <p class="head">Also embedded within the TMO are core capabilities that are key to our
+                      transformation, such as the new Data function,
+                      the ACI COE and Organization Business Services, and the TMO is closely partnered with the Commercial
+                      Excellence COE.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="square">
+            <div class="divider" (mousedown)="selectedItem = 3" [ngClass]="{'selected': selectedItem == 3}">
+              <div class="box">
+                <img src="assets/images/tm2.png">
+              </div>
+              <div class="box align">
+                <p>What are the Transformation Offices (TO’s)?</p>
+              </div>
+              <div *ngIf="selectedItem == 3" [@animate]="flyIn" class="responsive_hide">
+                <div class="container">
+                  <div class="content">
+                    <p class="head">To deliver on the set transformation ambition each part of the organization has
+                      setup their own team (transformation
+                      offices) which is lead by an Enterprise/Function Transformation Leader. The TMO provides oversight
+                      and connection to the
+                      network of transformation offices (TOs) which are working at the organizational nodes of the
+                      company (enterprise or
+                      function). The transformations are run and owned by these TOs which may also have sub-offices
+                      below them (i.e. at the
+                      group or sub-function level).
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="square">
+            <div class="divider" (mousedown)="selectedItem = 4" [ngClass]="{'selected': selectedItem == 4}">
+              <div class="box">
+                <img src="assets/images/tm3.png">
+              </div>
+              <div class="box align">
+                <p>What does success look like? In What are key operating principles for the TMO to achieve success?
+                </p>
+              </div>
+              <div *ngIf="selectedItem == 4" class="responsive_hide">
+                <div class="container">
+                  <div class="content" [@animate]="flyIn">
+                    <p class="head">A strong TMO combined with the strong execution network through the TOs will help us
+                      change how we work so we free up
+                      time, talent and energy and deliver for customers. Bringing a strong focus on execution excellence
+                      and continuous
+                      improvement, the basic operating principles that support the delivery of our cost reduction,
+                      income generation and
+                      growth targets include:
+                    </p>
+                    <ul class="list">
+                      <li>Clear priorities with aggressive targets tied to business performance</li>
+                      <li>Defined portfolio of initiatives that support the set ambitions, with established goals and
+                        timelines</li>
+                      <li>Straightforward, achievable roadmap of sequenced projects</li>
+                      <li>Structure, cadence and governance rigor that is right-sized and simplified to fit businesses
+                        and enable speedy decisions</li>
+                      <li>Clear roles, responsibilities and capabilities to engage and empower employees to drive
+                        improvement</li>
+                      <li>Accountability and ownership of value realization and capture</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="square">
+            <div class="divider" (mousedown)="selectedItem = 5" [ngClass]="{'selected': selectedItem == 5}">
+              <div class="box">
+                <img src="assets/images/tm4.png">
+              </div>
+              <div class="box align">
+                <p>TMO Levers</p>
+              </div>
+              <div *ngIf="selectedItem == 5" class="responsive_hide">
+                <div class="container">
+                  <div class="content" [@animate]="flyIn">
+
+                    <p class="head">We drive and measure the transformation across select levers</p>
+                    <div class="selectimg">
+                      <img src="assets/images/tm5_1.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="clear"></div>
+
+
+    </div>
+
+  </div>
+
+</div>

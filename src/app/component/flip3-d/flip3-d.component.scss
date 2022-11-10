@@ -1,0 +1,143 @@
+@import '../../variables';
+
+
+.card-panel {
+  width: 100%;
+  // min-height: 300px;
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+
+  justify-content: space-evenly
+}
+
+
+
+@include md {
+  .card-panel {
+    flex-direction: column;
+
+    .card {
+      width: 60%;
+    }
+  }
+}
+
+@include sm {
+  .card-panel {
+    .card {
+      width: 90%;
+    }
+  }
+}
+
+.card {
+  position: relative;
+  //width: 33.33333%;
+  height: 400px;
+  transform-style: preserve-3d;
+  cursor: pointer;
+
+  flex-basis: 33.33333%;
+  margin-right: 30px;
+  max-width: 400px;
+
+}
+
+.card .face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transform: perspective(500px) rotateY(0deg);
+  transition: all 2s ease;
+
+}
+
+.card .face.front {
+  background: $brand_color;
+}
+
+.card.selected .face.front {
+  transform: perspective(500px) rotateY(180deg);
+
+}
+
+.card .face.back {
+  background: $secondary_color;
+  color: #fff;
+  transform: perspective(500px) rotateY(180deg);
+  .text{
+  font-size: 15px;
+  }
+}
+
+.card.selected .face.back {
+  transform: perspective(500px) rotateY(360deg);
+}
+
+.card .face .zoom {
+  margin: 0px 15%;
+  /*transform: perspective(500px) translateZ(50px);*/
+}
+
+.flip-title {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.card .face img {
+  width: 15%;
+  margin-left: 45%;
+}
+
+.text {
+  margin: 20px;
+
+
+
+}
+
+.space {
+  padding-top: 35px;
+}
+
+#down_arr2 {
+  margin-top: 100px;
+  animation: blinkAnimation 1s ease 0s infinite alternate;
+  height: 40px;
+  width: 40px;
+  margin-left: 98%;
+
+  transform: translateY(0px);
+
+  a {
+    text-decoration: none;
+    // color: black;
+  }
+
+  img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@keyframes blinkAnimation {
+  0% {
+    left: 0px;
+    transform: translateY(0px);
+  }
+
+  100% {
+    left: 0px;
+    transform: translateY(-30px);
+  }
+}

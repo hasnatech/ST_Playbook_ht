@@ -1,0 +1,266 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'app/variables';
+
+@font-face {
+  font-family: "HelveticaNeueLTStd", Helvetica, Arial, san-serif;
+  src: url("assets/fonts/HelveticaNeueLTStdLt.otf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*
+ *  STYLE 4
+ */
+::-webkit-scrollbar-track {
+  /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+  background-color: rgb(143, 143, 143);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #363636;
+  border: 0px solid #555555;
+  border-radius: 10px;
+}
+
+
+
+
+.text-brand {
+  color: $brand-color;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'HelveticaNeueLTStd', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  // Neue, Helvetica, Arial, sans-serif
+}
+
+.section {
+  padding: 150px 0;
+  scroll-snap-type: y mandatory;
+}
+
+.inst {
+  color: $brand-color;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-equal {
+  flex: 1;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 10px;
+
+}
+
+.brand-color {
+  color: $brand-color;
+}
+
+a {
+  color: $secondary-color;
+}
+
+a:hover {
+  color: black;
+}
+
+
+.bg-brand {
+  background-color: $brand_color;
+  color: #fff;
+}
+
+
+.footer_navigation {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: $brand-color;
+  border-radius: 50px;
+  margin: 10px;
+  padding: 3px;
+
+  a {
+    cursor: pointer;
+  }
+
+  a:hover img {
+    background-color: $secondary-color;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-left: 5px;
+    margin-bottom: -4px;
+    transition: 0.5s;
+
+  }
+
+  a:first-child img {
+    margin-left: 0px;
+  }
+}
+
+
+
+.half_banner {
+  position: relative;
+  top: -150px;
+  height: 180px;
+  z-index: 1;
+
+
+  .bg_img {
+    background-position: center;
+    background-size: cover;
+  }
+
+  h2.title {
+    padding: 180px 10px;
+    padding-bottom: 60px;
+    font-size: 200%;
+    color: #fff;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+  //  padding-bottom: 180px;
+
+  }
+
+}
+ 
+.popup {
+  position: fixed;
+  width: 250px;
+  right: 10px;
+  bottom: 60px;
+  background: $brand-color;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px #00000038;
+  z-index: 101;
+  color: #fff;
+
+  .help::after {
+    content: " ";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid $brand-color;
+    position: absolute;
+    right: 45px;
+    bottom: -10px;
+
+  }
+
+  .middle_arrow::after {
+    right: 45px;
+  }
+
+  .last_arrow::after {
+    right: 12px;
+  }
+
+  a {
+    cursor: pointer;
+    color: #fff;
+    &:hover{
+      color: $secondary-color;
+    }
+  }
+}
+.desc{
+  ul{
+    li{
+      padding-bottom: 20px;
+    }
+  }
+ u{
+    color: $brand-color;
+  }
+
+  span{
+    color: red;
+  }
+}
+.desc1,.descrip{
+  ul{
+    li{
+      padding-bottom: 20px;
+      margin-left: -20px;
+      a{
+        color: #fff;
+        cursor: pointer;
+        
+      }
+    }
+  }
+}
+.desc{
+  ul{
+    li{
+      padding-bottom: 20px;
+      a{
+        color: #fff;
+        cursor: pointer;
+        
+        
+      }
+    }
+  }
+}
+.desc1{
+  ul{
+    li{
+      padding-bottom: 20px;
+      a:hover{
+        color: $secondary-color;
+       
+      }
+    }
+  }
+}
+.descrip{
+  ul{
+    li{
+      padding-bottom: 20px;
+      a:hover{
+        color: $brand_color;
+       
+      }
+    }
+  }
+}
+.size{
+  margin-top: -40px;
+}
+
+.space{
+  height: 50px;
+}

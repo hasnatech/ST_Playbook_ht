@@ -1,0 +1,43 @@
+<div id="slide5" class="half_banner">
+  <div class="bg_img">
+    <div class="container">
+      <div class="title_panel">
+        <h2 class="title">{{heading}}
+
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container size">
+  <div class="content">
+<div class="accordion">
+  <div class="item" *ngFor="let data of this.items; let i = index" [ngClass]="{'selected': selectedtab == i}">
+    <div class="title">
+      <div class="text"[innerHtml]="data.title" (click)="tab(i)">
+        
+      </div>
+     <div class="image" (click)="tab(i)" *ngIf="selectedtab != i">
+      <img src="assets/images/down.png">
+     </div>
+      <div class="image" (click)="close(i)" *ngIf="selectedtab == i">
+        <img src="assets/images/minimize.png">
+    </div>
+  </div>
+    <section class="content" *ngIf="selectedtab == i" >
+      <div class="text desc" [innerHtml]="data.desc"></div>
+     
+    </section>
+
+</div>
+</div>
+
+<a  class="button" routerLink="/glossary_page" routerLinkActive="active">
+<div class="image"><img src="assets/images/faq.png"><p>Playbook Glossary</p>
+</div>
+ 
+</a>
+</div>
+
+</div>

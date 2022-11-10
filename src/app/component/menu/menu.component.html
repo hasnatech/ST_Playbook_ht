@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="main">
+  
+  </div>
+    <div class="logo" *ngIf="whitelogo">
+        <a routerLink="/home"  routerLinkActive="active"><img src="assets/images/whitelogo.png" alt=""></a>
+    </div>
+    <div class="logohome"  *ngIf="logohome">
+      <a routerLink="/home" routerLinkActive="active"><img src="assets/images/logohome.png" alt=""></a>
+  </div>
+
+    <div class="menu_icon" [ngClass]="{'change' : menu_click }" (click)="menu_click = !menu_click">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    <div class="menu" [ngClass]="{'sticky' : this.sticky == true, 'open' : menu_click}">
+      <ul>
+        <li id="logo"><a routerLink="/home" routerLinkActive="active"><img src="assets/images/whitelogo.png" alt="logo"></a></li>
+        <!-- <li><a routerLink="/home" routerLinkActive="active"><img src="assets/images/home.png" alt="logo"></a></li> -->
+        <li><a routerLink="/Strategic_People_Transformation" routerLinkActive="active"> Strategic People Transformation </a></li>
+        <li class="dropdown"><a routerLink="/about" routerLinkActive="active">Organization Development</a>
+        
+          <div class="dropdown-content">
+            <a class="text" routerLink="/Our_OD" routerLinkActive="active">Our OD Practice Areas</a>
+            <a class="text" routerLink="/How_we_partner" routerLinkActive="active">How we partner</a>
+            <a class="text" routerLink="/How_we_deliver" routerLinkActive="active">How we deliver</a>
+          </div>
+      
+      </li>
+  
+       
+   
+        <li class="dropdown"><a routerLink="/Trans_mgmt_off" routerLinkActive="active" class="a">Transformation Management Office </a>
+        
+          <div class="dropdown-content">
+            <a routerLink="/OD_COE_partners" routerLinkActive="active">OD COE & TMO People Leads</a>
+            <a routerLink="/capablity_development" routerLinkActive="active">Capability Development in TMO</a>
+            <a>TMO Website</a>
+    
+      
+    </div>
+      </li>
+     
+        <li class="dropdown"><a routerLink="/key_partners" routerLinkActive="active">Partners</a>
+          <div class="dropdown-content1">
+            <a routerLink="/corporate_affairs" routerLinkActive="active">Global Communications</a>
+            <a routerLink="/global_learning_mgmt" routerLinkActive="active">Global Learning & Development</a>
+            <a routerLink="/global_talent_mgmt" routerLinkActive="active">Global Talent Management</a>
+            <a routerLink="/global_inclusion_diversity" routerLinkActive="active">Global Inclusion & Diversity</a>
+            <a routerLink="/global_talent_performance" routerLinkActive="active">GHRS Talent Performance</a>
+      </div>
+        </li>
+        <li><a routerLink="/toolkits_template" routerLinkActive="active">OD Toolkits & Templates</a></li>
+        <!-- <li><a href="#">Glossary & QA</a></li> -->
+        <li ><div class="image cursor" ><img src="assets/images/search.png" (click)="search()"></div></li>
+        <li><div class="image_white cursor"><img src="assets/images/search_white.png" (click)="search()"></div></li>
+      
+      </ul>
+      <div class="search" *ngIf="issearch">
+        <input type="text"  class="form-control" id="searchBox" name="myInput" autofocus placeholder="Type your search text and press enter" #myInput (keyup.enter)="searchFunc(myInput.value)"  required />
+    </div>
+  
+  </div>
+ <br>
+ <br>
+ <br>   

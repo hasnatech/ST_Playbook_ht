@@ -1,0 +1,80 @@
+@import '../../variables';
+
+.half_banner {
+
+  .bg_img {
+    background-image: url('../../../assets/images/partner_bg.png');
+  }
+}
+
+.grid-container {
+  display: flex;
+  margin-bottom: 30px;
+
+  .timeline {
+    width: 20%;
+    height: 300px;
+    text-align: center;
+    overflow: hidden;
+    padding-right: 5px;
+
+    &:last-child {
+      padding-right: 0px;
+    }
+
+    .text {
+      position: relative;
+
+      .image {
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        min-height: 300px;
+        transition: background-size 0.5s ease;
+
+        .title {
+          padding: 5px;
+          color: white;
+          position: absolute;
+          bottom: 0;
+          left: 0%;
+          right: 0;
+          //top: 80%;
+          background-color: rgba(34, 34, 34, 0.671);
+          transition: all 0.5s ease-in-out;
+          text-align: center;
+          min-height: 52px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+
+          .title1 {
+            font-size: 18px;
+            margin: 10px;
+            margin-bottom: 0;
+          }
+
+
+        }
+      }
+    }
+
+  }
+
+}
+
+.grid-container {
+  .timeline {
+    .text:hover {
+      .image {
+        background-size: 115%;
+
+        .title {
+          background-color: $brand_color
+        }
+      }
+    }
+  }
+}

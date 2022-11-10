@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<app-menu id="home" (scroll)="scroll($event)"></app-menu>
+<router-outlet></router-outlet>
+
+
+<div class="footer_navigation">
+  <a *ngIf="homeVisible == true" routerLink="/">
+    <img src="assets/images/home.svg" alt="">
+  </a>
+
+  <a (click)="show_popup = !show_popup">
+    <img src="assets/images/help.svg" alt="">
+
+  </a>
+
+  <a (click)="goUp()" *ngIf="_show_floating">
+    <img src="assets/images/up.svg" alt="">
+  </a>
+
+</div>
+<div class="popup" *ngIf="show_popup == true">
+  <div class="help" 
+  [ngClass]="{'middle_arrow': _show_floating, 'last_arrow': !_show_floating}">
+    <ul>
+      <li><a routerLink="/glossary_page" routerLinkActive="active">Glossary</a></li>
+      <li><a routerLink="/faq" routerLinkActive="active">FAQ</a></li>
+      <li><a (click)="openWindow('')" targrt="_blank">Need Transformation Support?</a></li>
+      <li><a (click)="openWindow('')" targrt="_blank">More about Organization Development</a></li>
+    </ul>
+  </div>
+</div>

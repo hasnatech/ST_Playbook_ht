@@ -1,0 +1,178 @@
+@import '../../variables';
+
+.half_banner {
+  
+  .bg_img {
+    background-image: url('../../../assets/images/partner_bg.png');
+  }
+}
+
+h3{
+    color: $brand_color;
+}
+.content{
+    display: flex;
+
+.left{
+    width: 35%;
+    margin-right: 1%;
+    h3{
+        color:$green_lite;
+    }
+    ul{
+        height: 180px;
+        li{
+            font-size: 14px;
+            span{
+                color:$green_lite;
+                font-weight: bold;
+            }
+        }
+    }
+.line{
+    background-color: $green_lite;
+}
+}
+
+.center{
+width: 29%;
+margin-top: 80px;
+img{
+    max-width: 100%;
+}
+}
+
+.right{
+width: 35%;
+margin-left: 1%;
+    ul{
+        height: 180px;
+        li{
+            padding-bottom: 8px;
+            font-size: 14px;
+            span{
+                color:$brand_color;
+                font-weight: bold;
+            }
+        }
+    }
+    .line{
+    background-color: $brand_color;
+}
+}
+.line{
+height: 0.7px;
+margin-bottom: 7px;
+}
+}
+.image{
+    width: 100%;
+    margin-top: 50px;
+    img{
+        max-width: 100%;
+    }
+}
+/*.content{
+    display: flex;
+   margin-bottom: 30px;
+   .left{
+       width: 48%;
+   }
+   .right{
+       width: 48%;
+   }
+    .number{
+        font-size: 120px;
+        font-weight: bold;
+        padding: 0px 20px;
+        
+    }
+    .text{
+        a:hover{
+            color: $brand_color;
+        }
+               
+        .head{
+            font-size: 20px;
+            width: 200px;
+        }
+    }
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.content1{
+    display: flex;
+  margin-bottom: 150px;
+ 
+   
+padding: 10px;   
+    .number{
+        color:#005f86;
+    }
+    .text{
+        //margin-right: 20px;
+        .head{
+            color:#005f86;
+        }
+    }
+}
+.content2{
+    display: flex;
+    margin-top: -170px;
+  ;
+  
+    padding: 10px;   
+    .number{
+        color:#007681;
+        margin-top: 120px;
+      
+    }
+    .text{
+        .head{
+            color:#007681;
+        }
+    }
+}
+.content3{
+   // border: 2px solid green;
+    display: flex;
+    padding: 10px;   
+    .number{
+      color:#279989
+    }
+    .text{
+        margin-right: 20px;
+        .head{
+            color:#279989;
+            width: 250px;
+        }
+    }
+}
+.image{
+    width:60%;
+    img{
+        max-width: 100%;
+    }
+}
+.links{
+    width: 40%;
+    padding: 15px;
+    background-color: #e9f5f3;
+    max-height: 260px;
+   
+    ul{
+        li{
+            padding-bottom: 10px;
+        }
+    }
+ 
+    .para{
+        color: $brand_color;
+    }
+    a:hover{
+        color:$brand_color
+    }
+}*/

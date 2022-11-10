@@ -1,0 +1,225 @@
+<div id="slide5" class="half_banner">
+  <div class="bg_img">
+    <div class="container">
+      <div class="title_panel">
+        <h2 class="title">{{heading}}
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container size">
+    <app-breadcrumb [navArr]="[{link:'about', text:'Organization Development'}, {link:'How_we_partner', text:'How we deliver'}]"></app-breadcrumb>
+    <div class="down_arr">
+      <a href="#flipcard">
+        Scroll Down
+        <img src="assets/images/Arrow_down1.png" alt="">
+      </a>
+    </div>
+  <div  class="slide10 tmcontent">
+    <div class="task">
+    <div class="text">
+      <p>In delivering our OD services, there is a strong partnership between TCOE OD,
+        GHRS OD as well as BHR and TMO People Leads/BHR, each focusing on different aspects of
+        Transformation, alongside our various <a routerLink="/key_partners">OD Partners</a>
+      </p>
+    </div>
+
+    <div id="close_id" class="resposive_table">
+      <table cellspacing="0">
+        <tr>
+          <td class="td1">
+          <td>
+            <div class="divider">
+              <div class="col1">
+                <img src="assets/images/S6_P1.png">
+              </div>
+              <div class="col1 align">
+                <h5>Strategic People Transformation</h5>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="divider">
+              <div class="col2">
+                <img src="assets/images/S6_P2.png">
+              </div>
+              <div class="col2 align">
+                <h5>Leadership Engagement</h5>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="divider">
+              <div class="col3">
+                <img src="assets/images/S6_P3.png">
+              </div>
+              <div class="col3 align">
+                <h5>Culture</h5>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="divider">
+              <div class="col4">
+                <img src="assets/images/S6_P4.png">
+              </div>
+              <div class="col4 align">
+                <h5>Organization Design</h5>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="divider">
+              <div class="col5">
+                <img src="assets/images/S6_P5.png">
+              </div>
+              <div class="col5 align">
+                <h5>Change</h5>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="td1" ><b>
+              <h3>BHR</h3>
+              Leadership Coaching – Strategic Diagnostic - Leads Change -
+              Identifies and Submits HR Needs – Partner in Delivery
+            </b></td>
+          <td>
+            <ul [ngClass]="{'hide' : !myVar}">
+              <li>Strategic leader transformation</li>
+              <li>“TMO People Lead” role in some areas</li>
+              <li>Diagnose transformation magnitude</li>
+            </ul>
+          </td>
+          <td>
+            <ul [ngClass]="{'hide' : !myVar}">
+              <li>Active coaching of leaders</li>
+              <li>Monitor and address team health and effectiveness</li>
+            </ul>
+          </td>
+          <td>
+            <ul [ngClass]="{'hide' : !myVar}">
+              <li>Coach leaders on culture</li>
+              <li>Cultural leader in preserving, amplifying and changing to further the strategy and drive
+                performance
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul [ngClass]="{'hide' : !myVar}">
+              <li>Diagnose need for organizational design change – strategy, operating model, etc.</li>
+              <li>Conduct org design efforts for “lower complexity” areas</li>
+            </ul>
+          </td>
+          <td>
+            <ul [ngClass]="{'hide' : !myVar}">
+              <li>Coach leaders to lead change</li>
+              <li>Remove barriers to change</li>
+              <li>Partner with Corporate Affairs to ensure effective change communication</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="td1" ><b>
+              <h3>GHRS - OD</h3>
+              Local Diagnosis – Lead Delivery in alignment with COE Methods/Approach– GHRS OD Talent Development
+            </b> </td>
+          <td>
+            <ul [ngClass]="{'hide' : !myVar1}">
+              <li>Delivery of HR services based on Strategic People Transformation diagnosis across the OD practices
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul [ngClass]="{'hide' : !myVar1}">
+              <li>Delivery of leadership team effectiveness services</li>
+            </ul>
+          </td>
+          <td>
+            <ul [ngClass]="{'hide' : !myVar1}">
+              <li>Delivery of Denison Culture Survey and action planning</li>
+              <li>Execution of Culture work aligned to Organization effort</li>
+              <li>Inclusion Health Scorecard</li>
+            </ul>
+          </td>
+          <td>
+            <ul [ngClass]="{'hide' : !myVar1}">
+              <li>Execution of Org Design efforts across the globe</li>
+              <li>Piloting Anaplan & BI as Org Design support tools</li>
+            </ul>
+          </td>
+          <td>
+            <ul [ngClass]="{'hide' : !myVar1}">
+              <li>Delivery of Change Management support for services/activities</li>
+              <li>Drive change communication with Corporate Affairs</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="td1" ><b>
+              <h3>TCOE – OD</h3>
+              Strategy - Methods – Approach – Tools – Capability Building
+            </b>
+          </td>
+          <td>
+            <ul [ngClass]="{'hide' : !myVar2}">
+              <li>Developing Strategic Playbook & Tools</li>
+              <li>Stand up of Corporate TMO and execution spine</li>
+              <li>Advise/Consult on integrated change management plan relating to high impact transformations</li>
+            </ul>
+          </td>
+          <td>
+            <ul [ngClass]="{'hide' : !myVar2}">
+              <li>LT effectiveness methods</li>
+              <li>Senior Leadership Group (SLG) meeting planning & execution</li>
+            </ul>
+          </td>
+          <td>
+            <ul [ngClass]="{'hide' : !myVar2}">
+              <li>Lead Organization culture work</li>
+              <li>Lead Organization with Inclusion & Diversity roadmap</li>
+              <li>Support further deployment of Denison in GHRS</li>
+            </ul>
+          </td>
+          <td>
+            <ul [ngClass]="{'hide' : !myVar2}">
+              <li>Lead Organization Organizational Blueprint – “Future of Work”</li>
+              <li>Deploy Org Design Toolkit & training</li>
+              <li>Pilot Anaplan and BI</li>
+              <li>Partner to scope high complexity Operating Model and Org design efforts</li>
+            </ul>
+          </td>
+          <td>
+            <ul [ngClass]="{'hide' : !myVar2}">
+              <li>Change plan for Corporate TMO</li>
+              <li>TMO Stakeholder Engagement for ET, TL’s, People Leads</li>
+              <li>Change method updates</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+    </div>
+    <div class="task1">
+    <!-- <div class="bottom_content">
+      <div class="head">
+        <h2>OD Partners</h2>
+      </div>
+      <div class="routers">
+        <div class="text" routerLink="/corporate_affairs" routerLinkActive="active">Corporate Affairs</div>
+        <div class="text" routerLink="/global_learning_mgmt" routerLinkActive="active">Global Learning & Development</div>
+        <div class="text" routerLink="/global_talent_mgmt" routerLinkActive="active">Global Talent Management</div>
+        <div class="text" routerLink="/global_inclusion_diversity" routerLinkActive="active">Global Inclusion & Diversity</div>
+        <div class="text"><a href="https://cargillonline.sharepoint.com/sites/TMO_Capability_Building/SitePages/Home.aspx#/"
+         target="_blank">GHRS Talent Performance</a></div>
+      </div>
+    </div>
+    <div class="space"></div> -->
+  </div>
+  </div>
+
+  
+</div>
