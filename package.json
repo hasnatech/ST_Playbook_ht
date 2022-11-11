@@ -4,12 +4,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href https://hasnatech.github.io/ST_Playbook_ht/",
-    "prod": "ng build --prod --base-href ./",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "gh-pages -d dist/playbook"
+    "git": "git add . && git commit -m 'update' && git push",
+    "predeploy": "ng build --configuration production --base-href https://hasnatech.github.io/ST_Playbook_ht/",
+    "deploy": "gh-pages -d dist/playbook",
+    "upload": "ng build --configuration production --base-href ./" 
   },
   "private": true,
   "dependencies": {
