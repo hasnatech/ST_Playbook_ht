@@ -8,14 +8,14 @@ import { Router } from '@angular/router';
 })
 export class VideoPanelComponent implements OnInit {
   items = [
-    {
-      type: "left",
-      title: "Welcome to the new Strategic People Transformation Playbook!",
-      desc: `<p>We are happy to have launched this reviewed playbook and are happy you are here.</p>
-      <p>Watch Ellen Stewart’s (HR Transformation & OD COE Leader) message for all our playbook visitors.</p>`,
-      image: "assets/images/video1.png",
-      button: " Play Video"
-    },
+    // {
+    //   type: "left",
+    //   title: "Welcome to the new Strategic People Transformation Playbook!",
+    //   desc: `<p>We are happy to have launched this reviewed playbook and are happy you are here.</p>
+    //   <p>Watch Ellen Stewart’s (HR Transformation & OD COE Leader) message for all our playbook visitors.</p>`,
+    //   image: "assets/images/video1.png",
+    //   button: " Play Video"
+    // },
     {
       type: "right",
       title: "Culture HR Update – March 2020: Culture diagnostic takes the pulse",
