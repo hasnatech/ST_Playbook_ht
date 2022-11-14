@@ -73,11 +73,11 @@ export class Our_ODComponent implements OnInit {
     {
    
      title: "<h3>Relevant Links<h3>",
-     desc:`<ul>
-     <li><a href="#/Trans_mgmt_off">Transformation Management Office</a></li>
-     <li><a href="https://cargill-admin.ancileuperform.com/ucontent/761e38c9926048c59a23191d4b7b024f_en-US/index.html" targrt="_blank">Reorganization Playbook</a></li>
-     <li><a href="https://sites.cargill.com/sites/MyHR4HR/SiteCollectionDocuments/GHRS-OpEx-Playbook.pdf#search=GHRS%20playbook" targrt="_blank">GHRS Playbook</a></li>
-     <li><a href="https://sites.cargill.com/sites/MyHR4HR/SiteCollectionDocuments/Cargill_MADJV_HR_PLAYBOOK_FINAL.pdf#search=MADJV playbook" targrt="_blank">MADJV Playbook</a></li></ul>`
+    //  desc:`<ul>
+    //  <li><a href="#/Trans_mgmt_off">Transformation Management Office</a></li>
+    //  <li><a href="https://cargill-admin.ancileuperform.com/ucontent/761e38c9926048c59a23191d4b7b024f_en-US/index.html" targrt="_blank">Reorganization Playbook</a></li>
+    //  <li><a href="https://sites.cargill.com/sites/MyHR4HR/SiteCollectionDocuments/GHRS-OpEx-Playbook.pdf#search=GHRS%20playbook" targrt="_blank">GHRS Playbook</a></li>
+    //  <li><a href="https://sites.cargill.com/sites/MyHR4HR/SiteCollectionDocuments/Cargill_MADJV_HR_PLAYBOOK_FINAL.pdf#search=MADJV playbook" targrt="_blank">MADJV Playbook</a></li></ul>`
     },
     
 
