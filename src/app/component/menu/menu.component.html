@@ -6,7 +6,7 @@
         <!-- <a routerLink="/home"  routerLinkActive="active"><img src="assets/images/whitelogo.png" alt=""></a> -->
     </div>
     <div class="logohome"  *ngIf="logohome">
-      <a routerLink="/home" routerLinkActive="active"><img src="assets/images/logohome.png" alt=""></a>
+      <a routerLink="/home" routerLinkActive="active"><img src="assets/images/logohome.png" alt="" class="hide"></a>
   </div>
 
     <div class="menu_icon" [ngClass]="{'change' : menu_click }" (click)="menu_click = !menu_click">
