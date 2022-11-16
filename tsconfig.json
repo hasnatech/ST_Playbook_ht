@@ -26,6 +26,6 @@
       "zlib": ["./node_modules/browserify-zlib"],
       "assert": ["./node_modules/assert"],
       "https": ["./node_modules/https-browserify"]
-    }
+    },
   }
 }

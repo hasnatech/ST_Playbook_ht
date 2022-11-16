@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { MainService } from './common/main.service';
 import { security } from 'ht-security';
@@ -13,10 +13,8 @@ export class AppComponent {
   homeVisible;
   show_popup = false;
   constructor(private router: Router, private service: MainService) { }
-  ngOnInit() {
-    security({
-      mode: "development"
-    })
+
+  ngOnInit() : void {
     this.router.events.subscribe((evt) => {
       console.log(this.router.url);
       if (this.router.url == "/" || this.router.url == "/home") {
@@ -31,7 +29,17 @@ export class AppComponent {
       window.scrollTo(0, 0);
       this.service.destroyScrollMagic();
     });
+
+
   }
+
+  ngAfterViewInit(): void {
+    security({
+      mode: "development" 
+      // mode: "deployment"     
+    });
+}
+  
   goUp() {
     window.scrollTo(0, 0)
   }
@@ -48,4 +56,5 @@ export class AppComponent {
     this.show_popup = false;
     window.open(url, "_blank");
   }
+  
 }
