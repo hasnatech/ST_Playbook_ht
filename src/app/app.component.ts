@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { MainService } from './common/main.service';
-
+import { security } from 'ht-security';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +14,9 @@ export class AppComponent {
   show_popup = false;
   constructor(private router: Router, private service: MainService) { }
   ngOnInit() {
+    security({
+      mode: "development"
+    })
     this.router.events.subscribe((evt) => {
       console.log(this.router.url);
       if (this.router.url == "/" || this.router.url == "/home") {

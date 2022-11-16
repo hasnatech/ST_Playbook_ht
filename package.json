@@ -11,7 +11,7 @@
     "git": "git add . && git commit -m 'update' && git push",
     "predeploy": "ng build --configuration production --base-href https://hasnatech.github.io/ST_Playbook_ht/",
     "deploy": "gh-pages -d dist/playbook",
-    "upload": "ng build --configuration production --base-href ./" 
+    "upload": "ng build --configuration production --base-href ./"
   },
   "private": true,
   "dependencies": {
@@ -30,6 +30,7 @@
     "core-js": "^3.26.0",
     "gh-pages": "^4.0.0",
     "gsap": "^3.11.3",
+    "ht-security": "^0.0.9",
     "parallax-js": "^3.1.0",
     "rxjs": "~7.5.7",
     "scrollmagic": "^2.0.8",
